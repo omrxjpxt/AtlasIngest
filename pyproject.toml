@@ -1,0 +1,14 @@
+[project]
+name = "intelligence-forge"
+version = "0.1.0"
+description = "Production-grade AI ecosystem data intelligence pipeline"
+requires-python = ">=3.11"
+authors = [
+    {name = "IntelligenceForge Team", email = "team@intelligenceforge.local"}
+]
+
+[tool.pytest.ini_options]
+addopts = "-v --strict-markers"
+testpaths = ["tests"]
+asyncio_mode = "auto"
+pythonpath = ["."]
