@@ -25,6 +25,16 @@ class Settings(BaseSettings):
     GITHUB_TOKEN: Optional[str] = None
     GOOGLE_SHEETS_CREDENTIALS: Optional[str] = None
     
+    # Crawler
+    CRAWLER_GLOBAL_CONCURRENCY: int = Field(default=20)
+    CRAWLER_PER_HOST_CONCURRENCY: int = Field(default=5)
+    CRAWLER_TIMEOUT_SECONDS: int = Field(default=30)
+    CRAWLER_CONNECT_TIMEOUT_SECONDS: int = Field(default=10)
+    CRAWLER_MAX_RETRIES: int = Field(default=3)
+    CRAWLER_BASE_BACKOFF_SECONDS: float = Field(default=1.0)
+    CRAWLER_MAX_BACKOFF_SECONDS: float = Field(default=30.0)
+    CRAWLER_USER_AGENT: str = Field(default="IntelligenceForge/0.1")
+    
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",

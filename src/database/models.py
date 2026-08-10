@@ -2,7 +2,7 @@ import uuid
 from datetime import datetime
 from typing import Optional, List
 
-from sqlalchemy import String, Boolean, DateTime, JSON, Integer, Enum as SQLEnum, ForeignKey
+from sqlalchemy import String, Boolean, DateTime, JSON, Integer, Enum as SQLEnum, ForeignKey, UniqueConstraint
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 from sqlalchemy.sql import func
@@ -55,6 +55,9 @@ class RawDocument(Base):
     Raw data (HTML/JSON) collected from a crawl.
     """
     __tablename__ = "raw_documents"
+    __table_args__ = (
+        UniqueConstraint('canonical_url', 'content_hash', name='uix_canonical_url_content_hash'),
+    )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     source_url: Mapped[str] = mapped_column(String)

@@ -7,15 +7,21 @@ IntelligenceForge is a production-grade data intelligence pipeline designed to i
 This project will eventually perform:
 `Source → Async Crawling → Raw Data → Cleaning → LLM Extraction → Validation → Entity Resolution → Enrichment → PostgreSQL → Google Sheets`
 
-### Phase 1 (Current Scope)
-Phase 1 establishes the clean project foundation, including:
+### Phase 1 & 2 (Current Scope)
+Phase 1 established the clean project foundation, including:
 - Strong typed Pydantic schemas for entities
 - Database schema (SQLAlchemy 2.x + asyncpg)
 - Configuration and Structured Logging
-- Error exception hierarchy
-- Initial testing suite
 
-**Note:** Crawling, LLM extraction, and API integrations are deliberately *not* implemented in Phase 1. There is no mock/fake data generation.
+Phase 2 established the Core Async Crawling Engine:
+- Robust `aiohttp` based async HTTP client with connection pooling
+- Configurable concurrency controls (global and per-host limits)
+- Exponential backoff with jitter for retries
+- URL canonicalization and SHA-256 content hashing for duplicate detection
+- PostgreSQL persistence of `RawDocument` with integrity conflict handling
+- Abstract `SourceAdapter` and `SourcePolicy` foundation
+
+**Note:** Production source adapters (scraping specific websites) and LLM extraction are deliberately *not* implemented yet. There is no mock/fake data generation.
 
 ## Project Structure
 
@@ -60,14 +66,19 @@ intelligence-forge/
    ```
    *Edit `.env` to match your local PostgreSQL credentials.*
 
-### Running the Application (Phase 1)
+### Running the Application
 To run the entrypoint, which verifies configuration, sets up logging, and initializes the database tables (requires PostgreSQL):
 ```bash
 python -m src.main
 ```
 
+To run a test crawl using the Phase 2 engine:
+```bash
+python -m src.main crawl --url https://example.com
+```
+
 ### Running Tests
-Unit tests do not require a live PostgreSQL instance.
+Unit tests do not require a live PostgreSQL instance or internet connection (they are mocked).
 ```bash
 pytest tests/ -v
 ```
