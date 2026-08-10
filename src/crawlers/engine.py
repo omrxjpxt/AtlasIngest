@@ -23,7 +23,8 @@ class CrawlerEngine:
         max_retries: int = 3,
         base_backoff: float = 1.0,
         max_backoff: float = 30.0,
-        user_agent: str = "IntelligenceForge/0.1"
+        user_agent: str = "IntelligenceForge/0.1",
+        verify_ssl: bool = True
     ):
         self.global_semaphore = asyncio.Semaphore(global_concurrency)
         self.client = AsyncHttpClient(
@@ -31,7 +32,8 @@ class CrawlerEngine:
             per_host_concurrency=per_host_concurrency,
             total_timeout=total_timeout,
             connect_timeout=connect_timeout,
-            user_agent=user_agent
+            user_agent=user_agent,
+            verify_ssl=verify_ssl
         )
         self.retry_engine = RetryEngine(
             max_retries=max_retries,

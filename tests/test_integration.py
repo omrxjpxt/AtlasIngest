@@ -30,7 +30,7 @@ async def test_crawler_integration():
         pytest.skip(f"Database not available for integration test: {e}")
 
     # Clean up any previous test runs from RawDocument
-    async for session in get_session():
+    async with get_session() as session:
         await session.execute(delete(RawDocument).where(RawDocument.source_url.like('%localhost:8080%')))
         await session.commit()
     
@@ -50,7 +50,7 @@ async def test_crawler_integration():
     assert results[1].success is True
     
     # Check Database for how many were saved
-    async for session in get_session():
+    async with get_session() as session:
         stmt = select(RawDocument).where(RawDocument.source_url == "http://localhost:8080/success")
         result = await session.execute(stmt)
         docs = result.scalars().all()

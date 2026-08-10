@@ -138,6 +138,8 @@ class ResearchPaper(Base):
     title: Mapped[str] = mapped_column(String)
     authors: Mapped[Optional[list]] = mapped_column(JSON)
     paper_url: Mapped[Optional[str]] = mapped_column(String, unique=True)
+    arxiv_id: Mapped[Optional[str]] = mapped_column(String, unique=True)
+    source_name: Mapped[Optional[str]] = mapped_column(String)
     github_url: Mapped[Optional[str]] = mapped_column(String)
     github_stars: Mapped[Optional[int]] = mapped_column(Integer)
     published_date: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))

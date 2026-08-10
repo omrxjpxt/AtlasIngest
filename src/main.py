@@ -42,6 +42,14 @@ async def main():
         crawl_parser = subparsers.add_parser("crawl", help="Run the crawler on a specific URL")
         crawl_parser.add_argument("--url", required=True, help="URL to crawl")
         
+        papers_parser = subparsers.add_parser("papers", help="Run Phase 3: Research Paper Ingestion")
+        papers_parser.add_argument("--target", type=int, help="Target number of papers to collect")
+        
+        audit_parser = subparsers.add_parser("audit", help="Run Data Quality Audit on Research Papers")
+        
+        export_parser = subparsers.add_parser("export", help="Export valid papers to JSONL")
+        export_parser.add_argument("--format", default="jsonl", help="Export format")
+        
         args = parser.parse_args()
         
         if args.command == "crawl":
@@ -54,7 +62,8 @@ async def main():
                 max_retries=settings.CRAWLER_MAX_RETRIES,
                 base_backoff=settings.CRAWLER_BASE_BACKOFF_SECONDS,
                 max_backoff=settings.CRAWLER_MAX_BACKOFF_SECONDS,
-                user_agent=settings.CRAWLER_USER_AGENT
+                user_agent=settings.CRAWLER_USER_AGENT,
+                verify_ssl=settings.CRAWLER_VERIFY_SSL
             )
             await engine.start()
             try:
@@ -66,9 +75,26 @@ async def main():
                     logger.error(f"Crawl failed: {result.error}")
             finally:
                 await engine.close()
+                
+        elif args.command == "papers":
+            from src.pipelines.papers import PaperPipeline
+            pipeline = PaperPipeline()
+            await pipeline.run(target_count=args.target)
+            
+        elif args.command == "audit":
+            from src.pipelines.audit import run_audit
+            success = await run_audit()
+            if not success:
+                sys.exit(1)
+                
+        elif args.command == "export":
+            from src.pipelines.export import run_export
+            # Only jsonl is currently supported but we accept the format flag
+            await run_export()
+            
         else:
             # 5. Perform a basic health/startup check
-            logger.info("Phase 2 foundation ready. Use 'crawl --url <url>' to test.")
+            logger.info("IntelligenceForge ready. Use one of the subcommands (crawl, papers, audit, export).")
         
     except ConfigurationError as e:
         # Fallback print if logging isn't fully set up yet

@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 async def create_crawl_run(source_id: uuid.UUID) -> uuid.UUID:
     """Creates a new crawl run record and returns its ID."""
     from src.database.models import CrawlRun
-    async for session in get_session():
+    async with get_session() as session:
         run = CrawlRun(source_id=source_id, status="RUNNING")
         session.add(run)
         await session.commit()
@@ -21,7 +21,7 @@ async def complete_crawl_run(crawl_run_id: uuid.UUID, status: str, pages_crawled
     """Marks a crawl run as completed or failed with final stats."""
     from sqlalchemy import select
     from src.database.models import CrawlRun
-    async for session in get_session():
+    async with get_session() as session:
         stmt = select(CrawlRun).where(CrawlRun.id == crawl_run_id)
         result = await session.execute(stmt)
         run = result.scalar_one_or_none()
@@ -46,7 +46,7 @@ async def save_raw_document(
     Handles duplicate detection via IntegrityError (unique constraint on canonical_url + content_hash).
     Returns True if successfully inserted, False if it was a duplicate.
     """
-    async for session in get_session():
+    async with get_session() as session:
         try:
             doc = RawDocument(
                 crawl_run_id=crawl_run_id,

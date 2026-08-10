@@ -34,6 +34,14 @@ class Settings(BaseSettings):
     CRAWLER_BASE_BACKOFF_SECONDS: float = Field(default=1.0)
     CRAWLER_MAX_BACKOFF_SECONDS: float = Field(default=30.0)
     CRAWLER_USER_AGENT: str = Field(default="IntelligenceForge/0.1")
+    CRAWLER_VERIFY_SSL: bool = Field(default=True)
+    
+    # Phase 3 Configuration
+    PAPER_TARGET_COUNT: int = Field(default=1200)
+    PAPER_DISCOVERY_BATCH_SIZE: int = Field(default=100)
+    GITHUB_CONCURRENCY: int = Field(default=5)
+    GITHUB_MAX_RETRIES: int = Field(default=3)
+    GITHUB_TOKEN: Optional[str] = Field(default=None)
     
     model_config = SettingsConfigDict(
         env_file=".env",

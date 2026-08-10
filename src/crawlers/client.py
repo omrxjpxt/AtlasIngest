@@ -13,21 +13,26 @@ class AsyncHttpClient:
         per_host_concurrency: int = 5,
         total_timeout: int = 30,
         connect_timeout: int = 10,
-        user_agent: str = "IntelligenceForge/0.1"
+        user_agent: str = "IntelligenceForge/0.1",
+        verify_ssl: bool = True
     ):
         self.global_concurrency = global_concurrency
         self.per_host_concurrency = per_host_concurrency
         self.total_timeout = total_timeout
         self.connect_timeout = connect_timeout
         self.user_agent = user_agent
+        self.verify_ssl = verify_ssl
         self.session: Optional[aiohttp.ClientSession] = None
         
     async def start(self):
         """Initializes the aiohttp ClientSession with connection pooling."""
         if self.session is None:
+            if not self.verify_ssl:
+                logger.warning("SSL verification is EXPLICITLY DISABLED for this AsyncHttpClient.")
             connector = aiohttp.TCPConnector(
                 limit=self.global_concurrency,
-                limit_per_host=self.per_host_concurrency
+                limit_per_host=self.per_host_concurrency,
+                ssl=self.verify_ssl
             )
             timeout = aiohttp.ClientTimeout(
                 total=self.total_timeout,

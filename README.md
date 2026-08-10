@@ -60,13 +60,30 @@ intelligence-forge/
    ```bash
    pip install -r requirements.txt
    ```
-4. Copy the environment variables:
+4. **Set Configuration**: Create a `.env` file from the example (if provided) and fill in your details:
    ```bash
    cp .env.example .env
+   # Ensure DATABASE_URL is set, e.g., DATABASE_URL="postgresql+asyncpg://localhost/intelligence_forge"
    ```
-   *Edit `.env` to match your local PostgreSQL credentials.*
 
-### Running the Application
+### macOS Troubleshooting: SSL Certificate Verify Failed
+
+If you are running Python on macOS (especially the official installer from Python.org) and encounter `[SSL: CERTIFICATE_VERIFY_FAILED]` when running the crawlers:
+
+macOS Python does not use the system's root certificates by default. To fix this, run the command included with your Python installation:
+```bash
+/Applications/Python\ 3.10/Install\ Certificates.command
+```
+*(Replace `3.10` with your actual Python version).*
+
+Alternatively, if you installed via Homebrew, ensure the `certifi` package is up to date:
+```bash
+pip install --upgrade certifi
+```
+
+If you absolutely must bypass SSL verification for local development (not recommended), you can set `CRAWLER_VERIFY_SSL=false` in your `.env` file. This will log explicit warnings during execution.
+
+## Running the Application
 To run the entrypoint, which verifies configuration, sets up logging, and initializes the database tables (requires PostgreSQL):
 ```bash
 python -m src.main
