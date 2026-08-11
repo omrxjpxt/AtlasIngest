@@ -24,7 +24,7 @@ class MockResponse:
 
 @pytest.fixture
 def mock_session_get():
-    with patch('aiohttp.ClientSession.get') as mock_get:
+    with patch('aiohttp.ClientSession.request') as mock_get:
         yield mock_get
 
 @pytest.mark.asyncio

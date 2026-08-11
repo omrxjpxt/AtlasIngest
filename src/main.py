@@ -45,7 +45,13 @@ async def main():
         papers_parser = subparsers.add_parser("papers", help="Run Phase 3: Research Paper Ingestion")
         papers_parser.add_argument("--target", type=int, help="Target number of papers to collect")
         
-        audit_parser = subparsers.add_parser("audit", help="Run Data Quality Audit on Research Papers")
+        startups_parser = subparsers.add_parser("startups", help="Run Phase 4: AI Startup Ingestion")
+        startups_parser.add_argument("--target", type=int, default=1200, help="Target number of startups to collect")
+        
+        products_parser = subparsers.add_parser("products", help="Run Phase 4: AI Product Ingestion")
+        products_parser.add_argument("--target", type=int, default=1200, help="Target number of products to collect")
+        
+        audit_parser = subparsers.add_parser("audit", help="Run Data Quality Audit on Research Papers, Startups, and Products")
         
         export_parser = subparsers.add_parser("export", help="Export valid papers to JSONL")
         export_parser.add_argument("--format", default="jsonl", help="Export format")
@@ -81,6 +87,16 @@ async def main():
             pipeline = PaperPipeline()
             await pipeline.run(target_count=args.target)
             
+        elif args.command == "startups":
+            from src.pipelines.startups import StartupPipeline
+            pipeline = StartupPipeline()
+            await pipeline.run(target_count=args.target)
+            
+        elif args.command == "products":
+            from src.pipelines.products import ProductPipeline
+            pipeline = ProductPipeline()
+            await pipeline.run(target_count=args.target)
+            
         elif args.command == "audit":
             from src.pipelines.audit import run_audit
             success = await run_audit()
@@ -88,13 +104,15 @@ async def main():
                 sys.exit(1)
                 
         elif args.command == "export":
-            from src.pipelines.export import run_export
+            from src.pipelines.export import run_export, run_export_startups, run_export_products
             # Only jsonl is currently supported but we accept the format flag
             await run_export()
+            await run_export_startups()
+            await run_export_products()
             
         else:
             # 5. Perform a basic health/startup check
-            logger.info("IntelligenceForge ready. Use one of the subcommands (crawl, papers, audit, export).")
+            logger.info("IntelligenceForge ready. Use one of the subcommands (crawl, papers, startups, products, audit, export).")
         
     except ConfigurationError as e:
         # Fallback print if logging isn't fully set up yet

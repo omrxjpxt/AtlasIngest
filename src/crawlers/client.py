@@ -56,7 +56,7 @@ class AsyncHttpClient:
             self.session = None
             logger.debug("AsyncHttpClient session closed.")
 
-    async def fetch(self, url: str) -> Tuple[Optional[str], Optional[int], Optional[str], Optional[str], Optional[float], Optional[str], Optional[float]]:
+    async def fetch(self, url: str, method: str = "GET", headers: Optional[dict] = None, data: Optional[bytes] = None) -> Tuple[Optional[str], Optional[int], Optional[str], Optional[str], Optional[float], Optional[str], Optional[float]]:
         """
         Fetches a URL and returns:
         (raw_html, status_code, content_type, final_url, response_time_ms, error, retry_after)
@@ -66,7 +66,13 @@ class AsyncHttpClient:
 
         start_time = time.monotonic()
         try:
-            async with self.session.get(url, allow_redirects=True, max_redirects=10) as response:
+            req_kwargs = {"allow_redirects": True, "max_redirects": 10}
+            if headers:
+                req_kwargs["headers"] = headers
+            if data:
+                req_kwargs["data"] = data
+                
+            async with self.session.request(method, url, **req_kwargs) as response:
                 status_code = response.status
                 content_type = response.headers.get('Content-Type', '')
                 final_url = str(response.url)

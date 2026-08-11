@@ -5,6 +5,9 @@ import uuid
 
 class CrawlRequest(BaseModel):
     url: str
+    method: str = "GET"
+    headers: Optional[Dict[str, str]] = None
+    body: Optional[bytes] = None
     source_id: Optional[uuid.UUID] = None
     source_name: Optional[str] = None
     source_type: Optional[str] = None

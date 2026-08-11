@@ -8,3 +8,4 @@ pytest-asyncio>=0.23
 aiohttp>=3.9
 aioresponses>=0.7
 lxml>=5.0
+beautifulsoup4

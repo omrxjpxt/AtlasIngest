@@ -56,7 +56,12 @@ class CrawlerEngine:
             result.retry_count = attempt
             
             async with self.global_semaphore:
-                raw_html, status_code, content_type, final_url, response_time, error, retry_after = await self.client.fetch(request.url)
+                raw_html, status_code, content_type, final_url, response_time, error, retry_after = await self.client.fetch(
+                    url=request.url,
+                    method=request.method,
+                    headers=request.headers,
+                    data=request.body
+                )
             
             result.status_code = status_code
             result.content_type = content_type
