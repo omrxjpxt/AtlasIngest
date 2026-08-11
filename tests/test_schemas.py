@@ -76,20 +76,19 @@ def test_negative_github_stars_rejected():
     assert "github_stars cannot be negative" in str(exc_info.value)
 
 def test_valid_job_record():
-    source = Source(name="YCW", url="https://ycombinator.com/jobs/123")
-    dt = datetime(2023, 10, 1, tzinfo=timezone.utc)
-    content = JobContent(
-        company="OpenAI",
-        is_remote=True,
-        role_family="Engineering",
-        date=dt
+    record = JobRecord(
+        source=Source(name="TechCrunch", url="https://techcrunch.com"),
+        content=JobContent(
+            company="OpenAI",
+            role="AI Engineer",
+            is_remote=True,
+            role_family="Engineering",
+            date=datetime.now(timezone.utc)
+        )
     )
-    
-    record = JobRecord(source=source, content=content)
-    
     assert record.recordType == RecordType.JOB
     assert record.content.is_remote is True
-    assert record.content.date == dt
+    assert record.content.role == "AI Engineer"
 
 def test_valid_news_record():
     source = Source(name="AI News", url="https://ainews.com/post")

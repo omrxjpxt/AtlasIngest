@@ -133,9 +133,11 @@ class ResearchPaperRecord(BaseRecord):
 
 class JobContent(BaseModel):
     company: str
+    role: str
     date: Optional[datetime] = None
     is_remote: Optional[bool] = None
     role_family: Optional[str] = None
+    location: Optional[str] = None
 
 class JobRecord(BaseRecord):
     recordType: RecordType = Field(default=RecordType.JOB)
@@ -154,18 +156,14 @@ class JobRecord(BaseRecord):
 class NewsContent(BaseModel):
     title: str
     published_date: Optional[datetime] = None
+    summary: Optional[str] = None
 
 class NewsRecord(BaseRecord):
     recordType: RecordType = Field(default=RecordType.NEWS)
-    # The prompt specified News should have source, title, url, published date, collectedAt directly
-    # So we adapt BaseRecord somewhat. We put title and published_date in content for consistency,
-    # or expose them directly. The assignment says:
-    # schemaVersion, recordType, source, title, url, published date, collectedAt
-    # We will use BaseRecord which provides schemaVersion, recordType, source, collectedAt.
-    # We add url, title, published_date at the top level to strictly match the prompt's structural request for News.
     title: str
     url: HttpUrl
     published_date: Optional[datetime] = None
+    summary: Optional[str] = None
     
     @field_validator("recordType")
     @classmethod

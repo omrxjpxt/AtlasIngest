@@ -81,6 +81,15 @@ Output data is exported into the `data/` directory.
 - **Pytest**: 35/35 passing. Run via `python -m pytest tests/ -v`.
 - **Smoke Tests**: 25/25 verified successfully for each target domain before production scaling.
 
+## Entity Resolution
+
+The system uses deterministic and source-verified normalization rather than complex fuzzy entity resolution. Canonicalization is handled as follows:
+
+- **Startups & Jobs:** The pipeline trusts the authoritative source directory (e.g., Y Combinator for Startups, or the job board for Jobs) as the canonical representation. It extracts the raw name provided by the source, stores it as the canonical name, and uses `source_verified` tracking.
+- **Products:** The pipeline performs strict deterministic string normalization on product owner strings using NFKD unicode decomposition, lowercasing, and removal of legal suffixes (inc, llc, corp) and whitespace. The system relies on this normalized string (`normalized_exact`) for mapping products to their owning startup. The original raw strings are not persisted beyond ingestion, and thus the mapping log reflects the post-normalization state as the proven mapping.
+
+*Sophisticated fuzzy matching or LLM-based entity resolution is intentionally excluded to strictly comply with the rule preventing hallucinated or assumed relationships.*
+
 ## Limitations
 - **Dynamic Content**: Extraction heavily relies on standard HTML or predictable structured JSON payloads (e.g. `data-page`). For example, Futurepedia's pagination uses JavaScript routing which restricts our static crawler to only 86 explicit products before requiring full JS rendering. 
 - **Strict Data Validation Rules**: We strictly avoid hallucinated data. If a product lacks explicit pricing or an explicit owner, we reject it (e.g. `PRICING_UNRESOLVED`, `OWNER_UNRESOLVED`) rather than pollute the database with LLM guesses or assumed defaults. Future upgrades plan to leverage LLMs (Phase 5) to robustly process unstructured pages while maintaining data integrity.
