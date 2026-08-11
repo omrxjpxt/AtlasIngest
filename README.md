@@ -1,10 +1,10 @@
 # IntelligenceForge
 
-IntelligenceForge is an asynchronous, source-driven data ingestion and normalization pipeline built to automatically collect, structure, and persist intelligence from multiple domains at scale. Designed with a strong emphasis on data integrity and provenance, it serves as the foundational data layer for downstream analytics and AI workflows.
+IntelligenceForge is an asynchronous, source-driven data ingestion and normalization pipeline for collecting, validating, and exporting structured intelligence from multiple domains. The system is designed around deterministic extraction, strict schema validation, and explicit source provenance to produce auditable datasets suitable for downstream analytics and AI workflows.
 
 ## What It Does
 
-The pipeline actively monitors and ingests structured intelligence across five distinct data domains:
+The pipeline currently ingests structured intelligence across five distinct data domains:
 - **Research Papers**: Extracts academic publications and their associated metadata.
 - **AI Startups**: Collects company profiles, employee counts, and foundational startup information.
 - **AI Products**: Aggregates AI software tools, pricing models, and product-to-startup relationships.
@@ -81,7 +81,7 @@ The pipeline resolves entities using deterministic, rule-based canonicalization.
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/omrxjpxt/AtlasIngest.git
    cd AtlasIngest
    ```
 
@@ -101,7 +101,7 @@ The pipeline resolves entities using deterministic, rule-based canonicalization.
    ```
 
 5. **Configure environment variables:**
-   Copy `.env.example` to `.env` (or create a `.env` file) and define your database connection:
+   Create a `.env` file and define your database connection:
    ```bash
    DATABASE_URL="postgresql+asyncpg://user:password@localhost:5432/intelligence_forge"
    ```
@@ -168,7 +168,7 @@ Additionally, the `python -m src.main audit` command performs runtime validation
 
 ## Limitations
 
-- **Dynamic JavaScript Content**: The current crawler implementation relies on static HTML and accessible API endpoints. Highly dynamic sites that obfuscate payloads or rely entirely on client-side JS rendering cannot be fully extracted using the existing synchronous HTTP approach without headless browser integration.
+- **Dynamic JavaScript Content**: The current crawler relies primarily on static HTML and accessible API/feed endpoints. Highly dynamic sites that require client-side JavaScript rendering cannot be fully extracted without a headless browser integration.
 - **Deterministic Resolution Restrictions**: Entities with severe typographical errors or radical rebranding are occasionally not recognized as identical due to the deliberate absence of fuzzy logic.
 - **Strict Exclusions**: To maintain zero hallucination tolerance, records lacking mandatory fields (e.g., a product lacking pricing data) are fully discarded, mildly reducing potential throughput in favor of absolute quality.
 
