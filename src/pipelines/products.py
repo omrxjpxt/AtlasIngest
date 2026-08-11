@@ -5,6 +5,7 @@ from src.config.settings import get_settings
 from src.crawlers.engine import CrawlerEngine
 from src.crawlers.adapters.futurepedia_products import FuturepediaProductAdapter
 from src.crawlers.adapters.aifoxx_products import AifoxxProductAdapter
+from src.crawlers.adapters.aitoptools_products import AITopToolsAdapter
 from src.database.connection import get_session
 from src.database.models import Startup, Product
 from src.pipelines.entity_normalization import normalize_entity_name
@@ -92,20 +93,23 @@ class ProductPipeline:
             #         await self._process_record(record, product_name, stats, session)
             
             
-            # AIFOXX Fallback
+            # AIFOXX is skipped for this final emergency run
+
+                    
+            # AITopTools Fallback
             if stats["valid"] < target_count:
-                remaining = target_count - stats["valid"]
-                logger.info(f"Futurepedia was insufficient. Running AIFOXX Adapter for {remaining} products...")
+                ait_adapter = AITopToolsAdapter(engine=self.engine)
+                needed = target_count - stats["valid"]
+                logger.info(f"Running AITopTools Adapter for {needed} products...")
                 
-                aifoxx_adapter = AifoxxProductAdapter(engine=self.engine)
-                async for record, product_name in aifoxx_adapter.fetch_and_parse_all(target_count=remaining):
+                async for record, product_name in ait_adapter.fetch_and_parse_all(target_count=needed):
                     if stats["valid"] >= target_count:
                         break
                         
                     stats["discovered"] += 1
                     async with get_session() as session:
                         await self._process_record(record, product_name, stats, session)
-                    
+                        
         finally:
             await self.engine.close()
             
