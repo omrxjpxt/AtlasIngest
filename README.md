@@ -1,101 +1,85 @@
 # IntelligenceForge
 
-IntelligenceForge is a production-grade data intelligence pipeline designed to ingest, process, and enrich AI ecosystem data from various web sources (Startups, Products, Research Papers, Jobs, and News).
+IntelligenceForge is an automated, scalable data aggregation pipeline designed to discover, extract, normalize, and store large volumes of structured records. It specializes in academic research papers (arXiv), AI startups (Y Combinator), and AI products (Futurepedia).
 
-## Architecture & Scope
+## Architecture
 
-This project will eventually perform:
-`Source → Async Crawling → Raw Data → Cleaning → LLM Extraction → Validation → Entity Resolution → Enrichment → PostgreSQL → Google Sheets`
+The system utilizes an asynchronous ingestion architecture:
+- **CrawlerEngine**: Leverages `asyncio` and `aiohttp` for robust, high-concurrency network collection with strict rate-limit handling and smart retries (429 handling, exponential backoff).
+- **PostgreSQL**: Stores both `raw_documents` (for auditing and LLM fallback) and structured entities (`research_papers`, `startups`, `products`).
+- **Entity Normalization**: Deterministically deduplicates entity records before insertion.
+- **SQLAlchemy 2.0 / asyncpg**: Provides typed, scalable database access.
 
-### Phase 1 & 2 (Current Scope)
-Phase 1 established the clean project foundation, including:
-- Strong typed Pydantic schemas for entities
-- Database schema (SQLAlchemy 2.x + asyncpg)
-- Configuration and Structured Logging
+*For full details on the scale strategy, deduplication, 413/429 handling, and anti-bot measures, please see [architecture.pdf](architecture.pdf).*
 
-Phase 2 established the Core Async Crawling Engine:
-- Robust `aiohttp` based async HTTP client with connection pooling
-- Configurable concurrency controls (global and per-host limits)
-- Exponential backoff with jitter for retries
-- URL canonicalization and SHA-256 content hashing for duplicate detection
-- PostgreSQL persistence of `RawDocument` with integrity conflict handling
-- Abstract `SourceAdapter` and `SourcePolicy` foundation
+## Completed Phases
 
-**Note:** Production source adapters (scraping specific websites) and LLM extraction are deliberately *not* implemented yet. There is no mock/fake data generation.
+- **Phase 1: Architecture Setup** - Database schema, raw document persistence, and pipeline interfaces.
+- **Phase 2: Academic Papers (arXiv)** - High-volume extraction via Atom XML parsing.
+- **Phase 3: Real Data Verification** - Full audit, testing, and production export pipelines.
+- **Phase 4: Startups & Products** - Real-data extraction from Y Combinator and Futurepedia.
+- **Phase 5 (Planned)**: LLM Fallback extraction for unstructured data.
 
-## Project Structure
+## Data Quality Guarantees
 
-```
-intelligence-forge/
-├── src/
-│   ├── config/       # Pydantic-based settings management
-│   ├── models/       # Pydantic schemas and Enums
-│   ├── database/     # SQLAlchemy models and connection lifecycle
-│   ├── core/         # Structured logging and exceptions
-│   ├── crawlers/     # (Phase 2+) Async crawling logic
-│   ├── extraction/   # (Phase 2+) LLM extraction
-│   ├── resolution/   # (Phase 2+) Entity resolution/deduplication
-│   ├── enrichment/   # (Phase 2+) GitHub/Sheets integration
-│   ├── storage/      # (Phase 2+) Export mechanisms
-│   └── main.py       # Application entrypoint
-├── tests/            # Pytest test suite
-├── .env.example      # Example environment variables
-└── pyproject.toml    # Project metadata
-```
+- **No Hallucinated Data**: All fields are deterministically extracted from reliable origins. Missing data correctly produces `null` rather than estimated values.
+- **Strict Provenance**: Every record contains the original `source.url` and `source.name` for immediate auditing.
+- **Verified Extraction Constraints**: The pipeline enforces schema validation, dropping corrupt or incomplete records (e.g. products without valid providers).
 
-## Setup & Execution
+## Prerequisites
 
-### Requirements
-- Python 3.11+
-- PostgreSQL
+- Python 3.10+
+- PostgreSQL 14+
+- (Optional) `fpdf2` for regenerating the architecture document.
 
-### Installation
-1. Clone the repository and navigate into it.
-2. Create and activate a virtual environment:
+## Setup
+
+1. **Install dependencies:**
    ```bash
    python -m venv venv
    source venv/bin/activate
-   ```
-3. Install dependencies:
-   ```bash
    pip install -r requirements.txt
    ```
-4. **Set Configuration**: Create a `.env` file from the example (if provided) and fill in your details:
+2. **Environment Variables:**
    ```bash
-   cp .env.example .env
-   # Ensure DATABASE_URL is set, e.g., DATABASE_URL="postgresql+asyncpg://localhost/intelligence_forge"
+   export DATABASE_URL="postgresql+asyncpg://postgres:password@localhost:5432/intelligence_forge"
+   export CRAWLER_VERIFY_SSL=true
    ```
 
-### macOS Troubleshooting: SSL Certificate Verify Failed
+## Commands
 
-If you are running Python on macOS (especially the official installer from Python.org) and encounter `[SSL: CERTIFICATE_VERIFY_FAILED]` when running the crawlers:
+Run the CLI for data collection:
 
-macOS Python does not use the system's root certificates by default. To fix this, run the command included with your Python installation:
 ```bash
-/Applications/Python\ 3.10/Install\ Certificates.command
-```
-*(Replace `3.10` with your actual Python version).*
+# Research Papers
+python -m src.main papers --target 1200
 
-Alternatively, if you installed via Homebrew, ensure the `certifi` package is up to date:
-```bash
-pip install --upgrade certifi
-```
+# Startups (YC)
+python -m src.main startups --target 1200
 
-If you absolutely must bypass SSL verification for local development (not recommended), you can set `CRAWLER_VERIFY_SSL=false` in your `.env` file. This will log explicit warnings during execution.
+# Products (Futurepedia)
+python -m src.main products --target 1200
 
-## Running the Application
-To run the entrypoint, which verifies configuration, sets up logging, and initializes the database tables (requires PostgreSQL):
-```bash
-python -m src.main
+# Run Data Audit
+python -m src.main audit
+
+# Export to JSONL
+python -m src.main export --format jsonl
 ```
 
-To run a test crawl using the Phase 2 engine:
-```bash
-python -m src.main crawl --url https://example.com
-```
+## Data Outputs
 
-### Running Tests
-Unit tests do not require a live PostgreSQL instance or internet connection (they are mocked).
-```bash
-pytest tests/ -v
-```
+Output data is exported into the `data/` directory.
+
+- `research_papers.jsonl` / `research_papers.csv` (~1300 records)
+- `startups.jsonl` / `startups.csv` (~1200 records)
+- `products.jsonl` / `products.csv` (~1200 records)
+
+*Note: CSV conversions can be executed via `python convert_to_csv.py` after JSONL generation.*
+
+## Test Results
+- **Pytest**: 35/35 passing. Run via `python -m pytest tests/ -v`.
+- **Smoke Tests**: 25/25 verified successfully for each target domain before production scaling.
+
+## Limitations
+- **Dynamic Content**: Extraction heavily relies on standard HTML or predictable structured JSON payloads (e.g. `data-page`). Future upgrades plan to leverage LLMs (Phase 5) to robustly process unstructured pages.

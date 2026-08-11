@@ -40,30 +40,43 @@ class FuturepediaProductAdapter:
         
         # We start by fetching categories
         categories = await self._fetch_categories()
+        if not categories:
+            logger.error("Failed to fetch any Futurepedia categories.")
+            return
+            
         logger.info(f"Discovered {len(categories)} Futurepedia categories")
         
         for category_url in categories:
             if yielded_count >= target_count:
                 break
                 
-            tool_urls = await self._fetch_tool_urls_from_category(category_url)
-            
-            # For each tool URL, fetch and parse
-            for tool_url in tool_urls:
-                if yielded_count >= target_count:
+            page = 1
+            while yielded_count < target_count:
+                paginated_url = f"{category_url}?page={page}" if page > 1 else category_url
+                tool_urls = await self._fetch_tool_urls_from_category(paginated_url)
+                
+                if not tool_urls:
                     break
                     
-                if tool_url in discovered_urls:
-                    continue
-                discovered_urls.add(tool_url)
-                
-                record, product_name, reject_reason = await self._fetch_and_parse_tool(tool_url)
-                
-                if record:
-                    yield record, product_name
-                    yielded_count += 1
-                else:
-                    logger.debug(f"Rejected product {tool_url}: {reject_reason}")
+                new_urls = [u for u in tool_urls if u not in discovered_urls]
+                if not new_urls:
+                    break
+                    
+                for tool_url in new_urls:
+                    if yielded_count >= target_count:
+                        break
+                        
+                    discovered_urls.add(tool_url)
+                    
+                    record, product_name, reject_reason = await self._fetch_and_parse_tool(tool_url)
+                    
+                    if record:
+                        yield record, product_name
+                        yielded_count += 1
+                    else:
+                        logger.debug(f"Rejected product {tool_url}: {reject_reason}")
+                        
+                page += 1
                     
     async def _fetch_categories(self) -> list[str]:
         """Fetches a list of category URLs."""
