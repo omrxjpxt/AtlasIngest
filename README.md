@@ -71,9 +71,9 @@ python -m src.main export --format jsonl
 
 Output data is exported into the `data/` directory.
 
-- `research_papers.jsonl` / `research_papers.csv` (~1300 records)
-- `startups.jsonl` / `startups.csv` (~1200 records)
-- `products.jsonl` / `products.csv` (~1200 records)
+- `research_papers.jsonl` / `research_papers.csv` (1300 records)
+- `startups.jsonl` / `startups.csv` (1225 records)
+- `products.jsonl` / `products.csv` (86 records)
 
 *Note: CSV conversions can be executed via `python convert_to_csv.py` after JSONL generation.*
 
@@ -82,4 +82,5 @@ Output data is exported into the `data/` directory.
 - **Smoke Tests**: 25/25 verified successfully for each target domain before production scaling.
 
 ## Limitations
-- **Dynamic Content**: Extraction heavily relies on standard HTML or predictable structured JSON payloads (e.g. `data-page`). Future upgrades plan to leverage LLMs (Phase 5) to robustly process unstructured pages.
+- **Dynamic Content**: Extraction heavily relies on standard HTML or predictable structured JSON payloads (e.g. `data-page`). For example, Futurepedia's pagination uses JavaScript routing which restricts our static crawler to only 86 explicit products before requiring full JS rendering. 
+- **Strict Data Validation Rules**: We strictly avoid hallucinated data. If a product lacks explicit pricing or an explicit owner, we reject it (e.g. `PRICING_UNRESOLVED`, `OWNER_UNRESOLVED`) rather than pollute the database with LLM guesses or assumed defaults. Future upgrades plan to leverage LLMs (Phase 5) to robustly process unstructured pages while maintaining data integrity.

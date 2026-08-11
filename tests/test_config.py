@@ -19,14 +19,14 @@ def test_settings_load_valid(monkeypatch):
     assert settings.APP_NAME == "IntelligenceForge"
 
 def test_settings_missing_database_url(monkeypatch):
-    """Test that missing DATABASE_URL raises validation error."""
-    # Ensure DATABASE_URL is not set
+    """Test that Settings raises ValidationError when DATABASE_URL is missing."""
     monkeypatch.delenv("DATABASE_URL", raising=False)
-    
-    with pytest.raises(ValidationError) as exc_info:
-        Settings()
+    with monkeypatch.context() as m:
+        m.setattr("src.config.settings.Settings.model_config", {"env_file": None})
+        with pytest.raises(ValidationError) as exc_info:
+            Settings()
         
-    assert "DATABASE_URL" in str(exc_info.value)
+        assert "DATABASE_URL" in str(exc_info.value)
 
 def test_settings_invalid_log_level(monkeypatch):
     """Test that invalid LOG_LEVEL raises validation error."""
@@ -51,9 +51,10 @@ def test_get_settings_caching(monkeypatch):
     assert settings_1 is settings_2
     
 def test_get_settings_raises_configuration_error(monkeypatch):
-    """Test that get_settings wraps ValidationErrors in our ConfigurationError."""
-    monkeypatch.delenv("DATABASE_URL", raising=False)
+    """Test that get_settings wraps ValidationError in ConfigurationError."""
     get_settings.cache_clear()
-    
-    with pytest.raises(ConfigurationError):
-        get_settings()
+    monkeypatch.delenv("DATABASE_URL", raising=False)
+    with monkeypatch.context() as m:
+        m.setattr("src.config.settings.Settings.model_config", {"env_file": None})
+        with pytest.raises(ConfigurationError):
+            get_settings()

@@ -1,40 +1,701 @@
 collectedAt,content_pricingModel,content_startupName,recordType,schemaVersion,source_name,source_url
-2026-08-11T14:04:17.801701,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/powermode-ai
-2026-08-11T14:04:17.801727,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/merlin
-2026-08-11T14:04:17.801735,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/magictrips
-2026-08-11T14:04:17.801741,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/zoho-sheet
-2026-08-11T14:04:17.801746,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/deepl-translator
-2026-08-11T14:04:17.801751,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/microsoft-translator
-2026-08-11T14:04:17.801756,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/google-translate
-2026-08-11T14:04:17.801761,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/scite
-2026-08-11T14:04:17.801766,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/microsoft-bing
-2026-08-11T14:04:17.801771,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/jigso
-2026-08-11T14:04:17.801775,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/pictory
-2026-08-11T14:04:17.801780,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/videoideas-ai
-2026-08-11T14:04:17.801785,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wondershare-filmora
-2026-08-11T14:04:17.801790,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/baby-agi
-2026-08-11T14:04:17.801794,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/auto-gpt
-2026-08-11T14:04:17.801799,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/stratupai
-2026-08-11T14:04:17.801803,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/n8n
-2026-08-11T14:04:17.801808,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/zencall-ai
-2026-08-11T14:04:17.801813,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/sudowrite
-2026-08-11T14:04:17.801817,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/midjourney-prompt-helper
-2026-08-11T14:04:17.801822,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/novel-ai
-2026-08-11T14:04:17.801827,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/hubspot
-2026-08-11T14:04:17.801831,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/transkriptor
-2026-08-11T14:04:17.801836,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/jasper
-2026-08-11T14:04:17.801841,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/hypotenuse-ai
-2026-08-11T14:04:17.801845,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/anyword
-2026-08-11T14:04:17.801850,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wellsaid
-2026-08-11T14:04:17.801855,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/respeecher
-2026-08-11T14:04:17.801859,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/mubert
-2026-08-11T14:04:17.801864,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/trint
-2026-08-11T14:04:17.801869,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wix-logo-maker
-2026-08-11T14:04:17.801873,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/namelix
-2026-08-11T14:04:17.801878,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/picsart
-2026-08-11T14:04:17.801883,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/pixela-ai
-2026-08-11T14:04:17.801887,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/civitai
-2026-08-11T14:04:17.801892,FREEMIUM,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/lucidpic
-2026-08-11T14:04:17.802008,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/stable-diffusion
-2026-08-11T14:04:17.802015,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/pollinations
-2026-08-11T14:04:17.802020,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/nightcafe-studio
+2026-08-11T16:20:57.730238,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/powermode-ai
+2026-08-11T16:20:57.730258,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/merlin
+2026-08-11T16:20:57.730265,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/magictrips
+2026-08-11T16:20:57.730270,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/zoho-sheet
+2026-08-11T16:20:57.730275,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/deepl-translator
+2026-08-11T16:20:57.730280,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/microsoft-translator
+2026-08-11T16:20:57.730285,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/google-translate
+2026-08-11T16:20:57.730290,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/scite
+2026-08-11T16:20:57.730295,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/microsoft-bing
+2026-08-11T16:20:57.730300,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/jigso
+2026-08-11T16:20:57.730305,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/pictory
+2026-08-11T16:20:57.730309,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/videoideas-ai
+2026-08-11T16:20:57.730314,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wondershare-filmora
+2026-08-11T16:20:57.730319,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/baby-agi
+2026-08-11T16:20:57.730324,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/auto-gpt
+2026-08-11T16:20:57.730329,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/stratupai
+2026-08-11T16:20:57.730334,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/n8n
+2026-08-11T16:20:57.730338,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/zencall-ai
+2026-08-11T16:20:57.730343,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/sudowrite
+2026-08-11T16:20:57.730348,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/midjourney-prompt-helper
+2026-08-11T16:20:57.730353,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/novel-ai
+2026-08-11T16:20:57.730357,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/hubspot
+2026-08-11T16:20:57.730361,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/transkriptor
+2026-08-11T16:20:57.730365,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/jasper
+2026-08-11T16:20:57.730369,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/hypotenuse-ai
+2026-08-11T16:20:57.730373,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/anyword
+2026-08-11T16:20:57.730378,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wellsaid
+2026-08-11T16:20:57.730382,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/respeecher
+2026-08-11T16:20:57.730386,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/mubert
+2026-08-11T16:20:57.730390,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/trint
+2026-08-11T16:20:57.730395,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wix-logo-maker
+2026-08-11T16:20:57.730399,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/namelix
+2026-08-11T16:20:57.730404,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/picsart
+2026-08-11T16:20:57.730409,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/pixela-ai
+2026-08-11T16:20:57.730413,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/civitai
+2026-08-11T16:20:57.730418,FREEMIUM,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/lucidpic
+2026-08-11T16:20:57.730438,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/stable-diffusion
+2026-08-11T16:20:57.730444,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/pollinations
+2026-08-11T16:20:57.730449,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/nightcafe-studio
+2026-08-11T16:20:57.730453,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/top-vs-best
+2026-08-11T16:20:57.730458,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/dezgo
+2026-08-11T16:20:57.730462,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/caspa-ai
+2026-08-11T16:20:57.730467,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/stable-horde
+2026-08-11T16:20:57.730472,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/flair-ai
+2026-08-11T16:20:57.730476,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/gen-2-by-runway
+2026-08-11T16:20:57.730481,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/aiphotoeditor
+2026-08-11T16:20:57.730485,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/imagecreator
+2026-08-11T16:20:57.730490,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/chromox
+2026-08-11T16:20:57.730494,PAID,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/adobe-firefly
+2026-08-11T16:20:57.730499,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wallpapersfyi
+2026-08-11T16:20:57.730504,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/thumbly
+2026-08-11T16:20:57.730508,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/pixaiart
+2026-08-11T16:20:57.730512,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/ipicai
+2026-08-11T16:20:57.730517,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/ambience
+2026-08-11T16:20:57.730521,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/geniea
+2026-08-11T16:20:57.730526,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/chapple
+2026-08-11T16:20:57.730530,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/ideogram
+2026-08-11T16:20:57.730535,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/stylar
+2026-08-11T16:20:57.730539,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wondershare-virtulook
+2026-08-11T16:20:57.730544,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/rundiffusion
+2026-08-11T16:20:57.730549,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/seaart
+2026-08-11T16:20:57.730553,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/diffusionbee
+2026-08-11T16:20:57.730558,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wondershare-presentory
+2026-08-11T16:20:57.730562,FREE,Kevin Hutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/typho
+2026-08-11T16:20:57.730568,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/google-imagen-3
+2026-08-11T16:20:57.730574,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/artbreeder
+2026-08-11T16:20:57.730579,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/thumbsnap
+2026-08-11T16:20:57.730583,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/idesigns
+2026-08-11T16:20:57.730588,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/appypie
+2026-08-11T16:20:57.730592,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/artigen-pro-ai
+2026-08-11T16:20:57.730606,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/stable-diffusion-web
+2026-08-11T16:20:57.730611,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/meta-ai
+2026-08-11T16:20:57.730615,PAID,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/replicate
+2026-08-11T16:20:57.730620,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/stability
+2026-08-11T16:20:57.730625,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/soulcanvas
+2026-08-11T16:20:57.730629,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/zmo
+2026-08-11T16:20:57.730634,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/photosonic-ai
+2026-08-11T16:20:57.730638,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/kira
+2026-08-11T16:20:57.730643,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/weryai
+2026-08-11T16:20:57.730647,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wepik
+2026-08-11T16:20:57.730652,PAID,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/runware
+2026-08-11T16:20:57.730656,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/flux1
+2026-08-11T16:20:57.730661,FREEMIUM,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/theb-ai
+2026-08-11T16:20:57.730665,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/openart
+2026-08-11T16:20:57.730670,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/artlist-ai
+2026-08-11T16:20:57.730674,FREE,About Us,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/rndrs
+2026-08-11T16:20:57.730679,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/circlebackai
+2026-08-11T16:20:57.730683,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/cheat-layer
+2026-08-11T16:20:57.730688,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/gptconsole
+2026-08-11T16:20:57.730692,FREE,kevinhutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/clevis
+2026-08-11T16:20:57.730697,FREEMIUM,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/rolemodel-ai
+2026-08-11T16:20:57.730701,FREEMIUM,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/mindstudio
+2026-08-11T16:20:57.730706,FREE,kevinhutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/mailmaestro
+2026-08-11T16:20:57.730710,FREE,kevinhutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/stammer
+2026-08-11T16:20:57.730715,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/rapport
+2026-08-11T16:20:57.730719,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/qodo
+2026-08-11T16:20:57.730724,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/theloops
+2026-08-11T16:20:57.730728,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/tulskio
+2026-08-11T16:20:57.730733,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/simple-phones
+2026-08-11T16:20:57.730737,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/sonara
+2026-08-11T16:20:57.730742,FREE,kevinhutson,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wellpin
+2026-08-11T16:20:57.730746,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/iplan-ai
+2026-08-11T16:20:57.730751,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/momen
+2026-08-11T16:20:57.730755,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/ask-layla
+2026-08-11T16:20:57.730759,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/cassidy
+2026-08-11T16:20:57.730775,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/beloga
+2026-08-11T16:20:57.730780,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/aidelly
+2026-08-11T16:20:57.730785,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/enso
+2026-08-11T16:20:57.730789,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/imbue
+2026-08-11T16:20:57.730794,PAID,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/comet
+2026-08-11T16:20:57.730798,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/mixus
+2026-08-11T16:20:57.730803,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/evermemos
+2026-08-11T16:20:57.730807,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/refraction-ai
+2026-08-11T16:20:57.730812,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/dcipher-insight-booster
+2026-08-11T16:20:57.730816,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/shield-ai
+2026-08-11T16:20:57.730821,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/wellows
+2026-08-11T16:20:57.730825,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/openclaw
+2026-08-11T16:20:57.730830,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/azara
+2026-08-11T16:20:57.730835,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/intercom
+2026-08-11T16:20:57.730839,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/cosupport-ai
+2026-08-11T16:20:57.730844,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/voctiv
+2026-08-11T16:20:57.730848,FREEMIUM,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/ragaai-inc
+2026-08-11T16:20:57.730853,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/heex
+2026-08-11T16:20:57.730857,PAID,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/composable-prompts
+2026-08-11T16:20:57.730862,FREE,aboutus,PRODUCT,1.0,Futurepedia,https://www.futurepedia.io/tool/freed
+2026-08-11T16:20:57.730866,FREE,andi,PRODUCT,1.0,Futurepedia,https://andisearch.com/
+2026-08-11T16:20:57.730872,FREEMIUM,writesonic,PRODUCT,1.0,Futurepedia,https://writesonic.com/
+2026-08-11T16:20:57.730877,FREEMIUM,type,PRODUCT,1.0,Futurepedia,https://type.ai/
+2026-08-11T16:20:57.730881,FREEMIUM,cohesive,PRODUCT,1.0,Futurepedia,https://cohesive.so/
+2026-08-11T16:20:57.730886,FREEMIUM,sweep,PRODUCT,1.0,Futurepedia,https://sweep.dev/
+2026-08-11T16:20:57.730891,FREEMIUM,warp,PRODUCT,1.0,Futurepedia,https://warp.dev/
+2026-08-11T16:20:57.730895,FREEMIUM,palette,PRODUCT,1.0,Futurepedia,https://palette.fm/
+2026-08-11T16:20:57.730900,FREEMIUM,fathom,PRODUCT,1.0,Futurepedia,https://fathom.ai/
+2026-08-11T16:20:57.730905,FREEMIUM,async,PRODUCT,1.0,Futurepedia,https://async.com/
+2026-08-11T16:20:57.730909,FREEMIUM,anara,PRODUCT,1.0,Futurepedia,https://anara.com/
+2026-08-11T16:20:57.730913,PAID,poly,PRODUCT,1.0,Futurepedia,https://poly.ai/
+2026-08-11T16:20:57.730918,FREEMIUM,julius,PRODUCT,1.0,Futurepedia,https://julius.ai/
+2026-08-11T16:20:57.730923,PAID,mosaic,PRODUCT,1.0,Futurepedia,https://www.hibob.com/
+2026-08-11T16:20:57.730927,PAID,flick,PRODUCT,1.0,Futurepedia,https://flick.social/
+2026-08-11T16:20:57.730932,FREEMIUM,microsoftcopilotyouraicompanion,PRODUCT,1.0,Futurepedia,https://copilot.microsoft.com/
+2026-08-11T16:20:57.730937,FREE,huggingchat,PRODUCT,1.0,Futurepedia,https://huggingface.co/chat
+2026-08-11T16:20:57.730946,FREEMIUM,youcom,PRODUCT,1.0,Futurepedia,https://you.com/
+2026-08-11T16:20:57.730952,FREEMIUM,brave,PRODUCT,1.0,Futurepedia,https://brave.com/leo/
+2026-08-11T16:20:57.730957,FREEMIUM,cohere,PRODUCT,1.0,Futurepedia,https://cohere.com/
+2026-08-11T16:20:57.730961,FREE,googleassistant,PRODUCT,1.0,Futurepedia,https://assistant.google.com/
+2026-08-11T16:20:57.730966,FREE,apple,PRODUCT,1.0,Futurepedia,https://www.apple.com/siri
+2026-08-11T16:20:57.730971,PAID,writer,PRODUCT,1.0,Futurepedia,https://writer.com/
+2026-08-11T16:20:57.730975,PAID,surfer,PRODUCT,1.0,Futurepedia,https://surferseo.com/
+2026-08-11T16:20:57.730980,FREEMIUM,notion,PRODUCT,1.0,Futurepedia,https://www.notion.com/product/ai
+2026-08-11T16:20:57.730985,FREE,samsungindia,PRODUCT,1.0,Futurepedia,https://www.samsung.com/bixby
+2026-08-11T16:20:57.730989,FREEMIUM,simplified,PRODUCT,1.0,Futurepedia,https://simplified.com/
+2026-08-11T16:20:57.730994,PAID,peppercontent,PRODUCT,1.0,Futurepedia,https://www.pepper.inc/
+2026-08-11T16:20:57.730998,FREEMIUM,coda,PRODUCT,1.0,Futurepedia,https://coda.io/
+2026-08-11T16:20:57.731003,FREEMIUM,replika,PRODUCT,1.0,Futurepedia,https://replika.com/
+2026-08-11T16:20:57.731008,FREEMIUM,contentbotai,PRODUCT,1.0,Futurepedia,https://contentbot.ai/
+2026-08-11T16:20:57.731012,FREEMIUM,quillbot,PRODUCT,1.0,Futurepedia,https://quillbot.com/
+2026-08-11T16:20:57.731017,FREEMIUM,scalenut,PRODUCT,1.0,Futurepedia,https://scalenut.com/
+2026-08-11T16:20:57.731021,PAID,originalityai,PRODUCT,1.0,Futurepedia,https://originality.ai/
+2026-08-11T16:20:57.731026,FREEMIUM,storylabai,PRODUCT,1.0,Futurepedia,https://storylab.ai/
+2026-08-11T16:20:57.731030,PAID,fraseio,PRODUCT,1.0,Futurepedia,https://frase.io/
+2026-08-11T16:20:57.731035,FREEMIUM,hypotenuseai,PRODUCT,1.0,Futurepedia,https://hypotenuse.ai/
+2026-08-11T16:20:57.731039,FREEMIUM,moonbeam,PRODUCT,1.0,Futurepedia,https://gomoonbeam.com/
+2026-08-11T16:20:57.731044,FREEMIUM,replit,PRODUCT,1.0,Futurepedia,https://replit.com/
+2026-08-11T16:20:57.731048,PAID,juno,PRODUCT,1.0,Futurepedia,https://www.getjuno.com/
+2026-08-11T16:20:57.731052,FREEMIUM,undetectableai,PRODUCT,1.0,Futurepedia,https://undetectable.ai/
+2026-08-11T16:20:57.731057,FREEMIUM,github,PRODUCT,1.0,Futurepedia,https://github.com/features/copilot
+2026-08-11T16:20:57.731062,FREEMIUM,lex,PRODUCT,1.0,Futurepedia,https://lex.page/
+2026-08-11T16:20:57.731066,FREEMIUM,devin,PRODUCT,1.0,Futurepedia,https://codeium.com/
+2026-08-11T16:20:57.731071,PAID,cognition,PRODUCT,1.0,Futurepedia,https://devin.ai/
+2026-08-11T16:20:57.731075,FREEMIUM,askcodi,PRODUCT,1.0,Futurepedia,https://askcodi.com/
+2026-08-11T16:20:57.731080,FREEMIUM,meshintelligenttechnologies,PRODUCT,1.0,Futurepedia,https://pieces.app/
+2026-08-11T16:20:57.731085,FREEMIUM,sapling,PRODUCT,1.0,Futurepedia,https://sapling.ai/
+2026-08-11T16:20:57.731089,FREEMIUM,gptzero,PRODUCT,1.0,Futurepedia,https://gptzero.me/
+2026-08-11T16:20:57.731094,FREEMIUM,coderabbit,PRODUCT,1.0,Futurepedia,https://coderabbit.ai/
+2026-08-11T16:20:57.731098,FREEMIUM,snyk,PRODUCT,1.0,Futurepedia,https://snyk.io/
+2026-08-11T16:20:57.731104,FREEMIUM,blackbox,PRODUCT,1.0,Futurepedia,https://blackbox.ai/
+2026-08-11T16:20:57.731109,FREEMIUM,boltnew,PRODUCT,1.0,Futurepedia,https://bolt.new/
+2026-08-11T16:20:57.731115,FREEMIUM,tabnine,PRODUCT,1.0,Futurepedia,https://tabnine.com/
+2026-08-11T16:20:57.731119,FREEMIUM,amazonwebservices,PRODUCT,1.0,Futurepedia,https://aws.amazon.com/q/developer
+2026-08-11T16:20:57.731130,FREEMIUM,mintlify,PRODUCT,1.0,Futurepedia,https://mintlify.com/
+2026-08-11T16:20:57.731135,PAID,jetbrains,PRODUCT,1.0,Futurepedia,https://jetbrains.com/ai
+2026-08-11T16:20:57.731140,FREEMIUM,trelent,PRODUCT,1.0,Futurepedia,https://trelent.com/
+2026-08-11T16:20:57.731144,FREEMIUM,amazonwebservices,PRODUCT,1.0,Futurepedia,https://aws.amazon.com/codewhisperer
+2026-08-11T16:20:57.731149,FREEMIUM,marketmuse,PRODUCT,1.0,Futurepedia,https://marketmuse.com/
+2026-08-11T16:20:57.731154,FREEMIUM,bito,PRODUCT,1.0,Futurepedia,https://bito.ai/
+2026-08-11T16:20:57.731436,FREEMIUM,vercel,PRODUCT,1.0,Futurepedia,https://v0.app/
+2026-08-11T16:20:57.731446,FREEMIUM,framer,PRODUCT,1.0,Futurepedia,https://framer.com/
+2026-08-11T16:20:57.731452,FREE,shopify,PRODUCT,1.0,Futurepedia,https://hatchful.shopify.com/
+2026-08-11T16:20:57.731457,FREEMIUM,blackforestlabs,PRODUCT,1.0,Futurepedia,https://bfl.ai/
+2026-08-11T16:20:57.731462,PAID,anyscale,PRODUCT,1.0,Futurepedia,https://anyscale.com/
+2026-08-11T16:20:57.731467,FREEMIUM,beautifulai,PRODUCT,1.0,Futurepedia,https://beautiful.ai/
+2026-08-11T16:20:57.731471,FREEMIUM,removebg,PRODUCT,1.0,Futurepedia,https://remove.bg/
+2026-08-11T16:20:57.731475,PAID,headshotpro,PRODUCT,1.0,Futurepedia,https://headshotpro.com/
+2026-08-11T16:20:57.731480,FREEMIUM,lexica,PRODUCT,1.0,Futurepedia,https://lexica.art/
+2026-08-11T16:20:57.731484,FREEMIUM,scenario,PRODUCT,1.0,Futurepedia,https://scenario.com/
+2026-08-11T16:20:57.731489,FREEMIUM,heygen,PRODUCT,1.0,Futurepedia,https://heygen.com/
+2026-08-11T16:20:57.731493,FREEMIUM,runway,PRODUCT,1.0,Futurepedia,https://runwayml.com/
+2026-08-11T16:20:57.731497,FREEMIUM,veed,PRODUCT,1.0,Futurepedia,https://veed.io/
+2026-08-11T16:20:57.731506,FREEMIUM,kombai,PRODUCT,1.0,Futurepedia,https://kombai.com/
+2026-08-11T16:20:57.731510,FREEMIUM,builderio,PRODUCT,1.0,Futurepedia,https://builder.io/blog/visual-copilot
+2026-08-11T16:20:57.731515,PAID,databricks,PRODUCT,1.0,Futurepedia,https://databricks.com/
+2026-08-11T16:20:57.731519,FREEMIUM,lightningai,PRODUCT,1.0,Futurepedia,https://lightning.ai/
+2026-08-11T16:20:57.731523,FREEMIUM,fotor,PRODUCT,1.0,Futurepedia,https://fotor.com/
+2026-08-11T16:20:57.731527,FREEMIUM,decktopusai,PRODUCT,1.0,Futurepedia,https://decktopus.com/
+2026-08-11T16:20:57.731532,FREEMIUM,deepai,PRODUCT,1.0,Futurepedia,https://deepai.org/
+2026-08-11T16:20:57.731536,PAID,aragonai,PRODUCT,1.0,Futurepedia,https://aragon.ai/
+2026-08-11T16:20:57.731540,FREEMIUM,klingai,PRODUCT,1.0,Futurepedia,https://kling.ai/
+2026-08-11T16:20:57.731544,FREEMIUM,hotpotai,PRODUCT,1.0,Futurepedia,https://hotpot.ai/
+2026-08-11T16:20:57.731549,FREEMIUM,weightsbiases,PRODUCT,1.0,Futurepedia,https://wandb.ai/
+2026-08-11T16:20:57.731553,FREEMIUM,togetherai,PRODUCT,1.0,Futurepedia,https://together.ai/
+2026-08-11T16:20:57.731557,FREEMIUM,googleclouddocumentation,PRODUCT,1.0,Futurepedia,https://cloud.google.com/gemini/docs/codeassist
+2026-08-11T16:20:57.731562,FREEMIUM,figma,PRODUCT,1.0,Futurepedia,https://figma.com/
+2026-08-11T16:20:57.731566,FREEMIUM,wombo,PRODUCT,1.0,Futurepedia,https://dream.ai/
+2026-08-11T16:20:57.731570,FREEMIUM,uxpilotai,PRODUCT,1.0,Futurepedia,https://uxpilot.ai/
+2026-08-11T16:20:57.731575,FREEMIUM,prezicom,PRODUCT,1.0,Futurepedia,https://prezi.com/
+2026-08-11T16:20:57.731579,FREEMIUM,creately,PRODUCT,1.0,Futurepedia,https://creately.com/
+2026-08-11T16:20:57.731595,FREEMIUM,pixlr,PRODUCT,1.0,Futurepedia,https://pixlr.com/
+2026-08-11T16:20:57.731599,FREEMIUM,visme,PRODUCT,1.0,Futurepedia,https://visme.co/
+2026-08-11T16:20:57.731604,FREEMIUM,bingimagecreator,PRODUCT,1.0,Futurepedia,https://www.bing.com/images/create
+2026-08-11T16:20:57.731608,FREEMIUM,deepdreamgenerator,PRODUCT,1.0,Futurepedia,https://deepdreamgenerator.com/
+2026-08-11T16:20:57.731613,PAID,topazlabs,PRODUCT,1.0,Futurepedia,https://topazlabs.com/
+2026-08-11T16:20:57.731617,FREE,stickermule,PRODUCT,1.0,Futurepedia,https://stickermule.com/trace
+2026-08-11T16:20:57.731621,FREEMIUM,neurallove,PRODUCT,1.0,Futurepedia,https://neural.love/
+2026-08-11T16:20:57.731625,FREEMIUM,piktochart,PRODUCT,1.0,Futurepedia,https://piktochart.com/
+2026-08-11T16:20:57.731630,FREEMIUM,slidesai,PRODUCT,1.0,Futurepedia,https://slidesai.io/
+2026-08-11T16:20:57.731634,FREEMIUM,stitch,PRODUCT,1.0,Futurepedia,https://stitch.withgoogle.com/
+2026-08-11T16:20:57.731638,FREEMIUM,starryai,PRODUCT,1.0,Futurepedia,https://starryai.com/
+2026-08-11T16:20:57.731643,FREEMIUM,photoroom,PRODUCT,1.0,Futurepedia,https://photoroom.com/
+2026-08-11T16:20:57.731647,PAID,photoai,PRODUCT,1.0,Futurepedia,https://photoai.com/
+2026-08-11T16:20:57.731659,FREEMIUM,affogato,PRODUCT,1.0,Futurepedia,https://affogato.ai/
+2026-08-11T16:20:57.731665,FREEMIUM,invideo,PRODUCT,1.0,Futurepedia,https://invideo.io/
+2026-08-11T16:20:57.731670,FREEMIUM,synthesia,PRODUCT,1.0,Futurepedia,https://synthesia.io/
+2026-08-11T16:20:57.731674,FREEMIUM,img2go,PRODUCT,1.0,Futurepedia,https://img2go.com/
+2026-08-11T16:20:57.731679,PAID,colossyan,PRODUCT,1.0,Futurepedia,https://colossyan.com/
+2026-08-11T16:20:57.731684,FREEMIUM,wondersharefilmora,PRODUCT,1.0,Futurepedia,https://filmora.wondershare.com/
+2026-08-11T16:20:57.731688,FREEMIUM,mirage,PRODUCT,1.0,Futurepedia,https://captions.ai/
+2026-08-11T16:20:57.731693,PAID,deepbrainai,PRODUCT,1.0,Futurepedia,https://aistudios.com/
+2026-08-11T16:20:57.731697,FREEMIUM,grain,PRODUCT,1.0,Futurepedia,https://grain.com/
+2026-08-11T16:20:57.731702,FREEMIUM,firefliesai,PRODUCT,1.0,Futurepedia,https://fireflies.ai/
+2026-08-11T16:20:57.731706,FREEMIUM,riverside,PRODUCT,1.0,Futurepedia,https://riverside.com/
+2026-08-11T16:20:57.731711,FREEMIUM,lumen5aivideomakergeneratevideosfromtextonline,PRODUCT,1.0,Futurepedia,https://lumen5.com/
+2026-08-11T16:20:57.731716,FREEMIUM,tldv,PRODUCT,1.0,Futurepedia,https://tldv.io/
+2026-08-11T16:20:57.731720,PAID,steveai,PRODUCT,1.0,Futurepedia,https://steve.ai/
+2026-08-11T16:20:57.731725,FREEMIUM,fliki,PRODUCT,1.0,Futurepedia,https://fliki.ai/
+2026-08-11T16:20:57.731729,FREEMIUM,descript,PRODUCT,1.0,Futurepedia,https://descript.com/
+2026-08-11T16:20:57.731734,FREEMIUM,krisp,PRODUCT,1.0,Futurepedia,https://krisp.ai/
+2026-08-11T16:20:57.731738,FREEMIUM,qusoai,PRODUCT,1.0,Futurepedia,https://quso.ai/
+2026-08-11T16:20:57.731743,FREEMIUM,vidnoz,PRODUCT,1.0,Futurepedia,https://vidnoz.com/
+2026-08-11T16:20:57.731748,PAID,topazlabs,PRODUCT,1.0,Futurepedia,https://topazlabs.com/topaz-video-ai
+2026-08-11T16:20:57.731752,PAID,recallai,PRODUCT,1.0,Futurepedia,https://recall.ai/
+2026-08-11T16:20:57.731757,FREEMIUM,flexclip,PRODUCT,1.0,Futurepedia,https://flexclip.com/
+2026-08-11T16:20:57.731762,FREEMIUM,did,PRODUCT,1.0,Futurepedia,https://d-id.com/
+2026-08-11T16:20:57.731766,FREEMIUM,lumaai,PRODUCT,1.0,Futurepedia,https://lumalabs.ai/
+2026-08-11T16:20:57.731777,FREEMIUM,nottaai,PRODUCT,1.0,Futurepedia,https://notta.ai/
+2026-08-11T16:20:57.731782,FREEMIUM,vizardai,PRODUCT,1.0,Futurepedia,https://vizard.ai/
+2026-08-11T16:20:57.731787,PAID,submagic,PRODUCT,1.0,Futurepedia,https://submagic.co/
+2026-08-11T16:20:57.731792,FREEMIUM,genmo,PRODUCT,1.0,Futurepedia,https://genmo.ai/
+2026-08-11T16:20:57.731797,FREEMIUM,elevenlabs,PRODUCT,1.0,Futurepedia,https://elevenlabs.io/
+2026-08-11T16:20:57.731801,FREEMIUM,stabilityai,PRODUCT,1.0,Futurepedia,https://stability.ai/stable-video
+2026-08-11T16:20:57.731806,FREEMIUM,listnrai,PRODUCT,1.0,Futurepedia,https://listnr.ai/
+2026-08-11T16:20:57.731811,FREEMIUM,clipchamp,PRODUCT,1.0,Futurepedia,https://clipchamp.com/
+2026-08-11T16:20:57.731815,PAID,raskai,PRODUCT,1.0,Futurepedia,https://rask.ai/
+2026-08-11T16:20:57.731820,FREEMIUM,wisecut,PRODUCT,1.0,Futurepedia,https://wisecut.ai/
+2026-08-11T16:20:57.731825,FREEMIUM,hailuoaivideo,PRODUCT,1.0,Futurepedia,https://hailuoai.video/
+2026-08-11T16:20:57.731829,FREEMIUM,narakeet,PRODUCT,1.0,Futurepedia,https://narakeet.com/
+2026-08-11T16:20:57.731834,FREEMIUM,speechify,PRODUCT,1.0,Futurepedia,https://speechify.com/
+2026-08-11T16:20:57.731838,FREEMIUM,hedra,PRODUCT,1.0,Futurepedia,https://hedra.com/
+2026-08-11T16:20:57.731843,FREEMIUM,resembleai,PRODUCT,1.0,Futurepedia,https://resemble.ai/
+2026-08-11T16:20:57.731847,PAID,wellsaid,PRODUCT,1.0,Futurepedia,https://wellsaid.io/
+2026-08-11T16:20:57.731852,FREEMIUM,lumaai,PRODUCT,1.0,Futurepedia,https://lumalabs.ai/dream-machine
+2026-08-11T16:20:57.731857,FREEMIUM,suno,PRODUCT,1.0,Futurepedia,https://suno.com/
+2026-08-11T16:20:57.731861,FREEMIUM,udio,PRODUCT,1.0,Futurepedia,https://udio.com/
+2026-08-11T16:20:57.731866,FREEMIUM,splice,PRODUCT,1.0,Futurepedia,https://splice.com/
+2026-08-11T16:20:57.731871,PAID,googledeepmind,PRODUCT,1.0,Futurepedia,https://deepmind.google/technologies/veo
+2026-08-11T16:20:57.731875,PAID,soundraw,PRODUCT,1.0,Futurepedia,https://soundraw.io/
+2026-08-11T16:20:57.731880,FREEMIUM,voicemod,PRODUCT,1.0,Futurepedia,https://voicemod.net/
+2026-08-11T16:20:57.731885,FREEMIUM,beatovenai,PRODUCT,1.0,Futurepedia,https://beatoven.ai/
+2026-08-11T16:20:57.731889,FREE,bandlab,PRODUCT,1.0,Futurepedia,https://bandlab.com/
+2026-08-11T16:20:57.731894,FREEMIUM,dubverseai,PRODUCT,1.0,Futurepedia,https://dubverse.ai/
+2026-08-11T16:20:57.731898,FREEMIUM,soundtrap,PRODUCT,1.0,Futurepedia,https://soundtrap.com/
+2026-08-11T16:20:57.731903,FREEMIUM,assemblyai,PRODUCT,1.0,Futurepedia,https://assemblyai.com/
+2026-08-11T16:20:57.731907,PAID,sonix,PRODUCT,1.0,Futurepedia,https://sonix.ai/
+2026-08-11T16:20:57.731912,FREEMIUM,endel,PRODUCT,1.0,Futurepedia,https://endel.io/
+2026-08-11T16:20:57.731917,FREEMIUM,stabilityai,PRODUCT,1.0,Futurepedia,https://stability.ai/stable-audio
+2026-08-11T16:20:57.731921,FREEMIUM,altered,PRODUCT,1.0,Futurepedia,https://altered.ai/
+2026-08-11T16:20:57.731926,FREEMIUM,soundful,PRODUCT,1.0,Futurepedia,https://soundful.com/
+2026-08-11T16:20:57.731930,FREEMIUM,deepgram,PRODUCT,1.0,Futurepedia,https://deepgram.com/
+2026-08-11T16:20:57.731935,FREEMIUM,moz,PRODUCT,1.0,Futurepedia,https://moz.com/
+2026-08-11T16:20:57.731939,FREEMIUM,hubspot,PRODUCT,1.0,Futurepedia,https://hubspot.com/
+2026-08-11T16:20:57.731951,PAID,izotope,PRODUCT,1.0,Futurepedia,https://izotope.com/
+2026-08-11T16:20:57.731956,PAID,brainfmmusictofocusbetter,PRODUCT,1.0,Futurepedia,https://brain.fm/
+2026-08-11T16:20:57.731970,PAID,ahrefs,PRODUCT,1.0,Futurepedia,https://ahrefs.com/
+2026-08-11T16:20:57.731975,FREEMIUM,loudly,PRODUCT,1.0,Futurepedia,https://loudly.com/
+2026-08-11T16:20:57.731980,FREEMIUM,vwo,PRODUCT,1.0,Futurepedia,https://vwo.com/
+2026-08-11T16:20:57.731984,FREEMIUM,voiceai,PRODUCT,1.0,Futurepedia,https://voice.ai/
+2026-08-11T16:20:57.731989,PAID,unbounce,PRODUCT,1.0,Futurepedia,https://unbounce.com/
+2026-08-11T16:20:57.731993,PAID,brand24,PRODUCT,1.0,Futurepedia,https://brand24.com/
+2026-08-11T16:20:57.731998,PAID,pathfactory,PRODUCT,1.0,Futurepedia,https://pathfactory.com/
+2026-08-11T16:20:57.732003,FREEMIUM,yoast,PRODUCT,1.0,Futurepedia,https://yoast.com/
+2026-08-11T16:20:57.732007,PAID,cision,PRODUCT,1.0,Futurepedia,https://cision.com/
+2026-08-11T16:20:57.732012,PAID,prowly,PRODUCT,1.0,Futurepedia,https://prowly.com/
+2026-08-11T16:20:57.732016,PAID,zoominfo,PRODUCT,1.0,Futurepedia,https://zoominfo.com/
+2026-08-11T16:20:57.732021,PAID,uberflipapathfactorycompany,PRODUCT,1.0,Futurepedia,https://uberflip.com/
+2026-08-11T16:20:57.732026,PAID,wingman,PRODUCT,1.0,Futurepedia,https://wingman.ai/
+2026-08-11T16:20:57.732031,PAID,proposify,PRODUCT,1.0,Futurepedia,https://proposify.com/
+2026-08-11T16:20:57.732035,FREEMIUM,ticktick,PRODUCT,1.0,Futurepedia,https://ticktick.com/
+2026-08-11T16:20:57.732040,FREEMIUM,tettra,PRODUCT,1.0,Futurepedia,https://tettra.com/
+2026-08-11T16:20:57.732044,FREEMIUM,slite,PRODUCT,1.0,Futurepedia,https://slite.com/
+2026-08-11T16:20:57.732049,FREEMIUM,anydo,PRODUCT,1.0,Futurepedia,https://any.do/
+2026-08-11T16:20:57.732053,FREEMIUM,readdle,PRODUCT,1.0,Futurepedia,https://sparkmailapp.com/
+2026-08-11T16:20:57.732058,FREEMIUM,fibery,PRODUCT,1.0,Futurepedia,https://fibery.com/
+2026-08-11T16:20:57.732062,FREEMIUM,paperpal,PRODUCT,1.0,Futurepedia,https://paperpal.com/
+2026-08-11T16:20:57.732067,FREE,inciteful,PRODUCT,1.0,Futurepedia,https://incitefulmed.com/academic/
+2026-08-11T16:20:57.732071,FREEMIUM,explainpaper,PRODUCT,1.0,Futurepedia,https://explainpaper.com/
+2026-08-11T16:20:57.732075,FREEMIUM,dimensions,PRODUCT,1.0,Futurepedia,https://dimensions.ai/
+2026-08-11T16:20:57.732080,FREEMIUM,crisp,PRODUCT,1.0,Futurepedia,https://crisp.chat/
+2026-08-11T16:20:57.732084,FREE,tawkto,PRODUCT,1.0,Futurepedia,https://tawk.to/
+2026-08-11T16:20:57.732089,PAID,aisera,PRODUCT,1.0,Futurepedia,https://aisera.com/
+2026-08-11T16:20:57.732093,PAID,aircall,PRODUCT,1.0,Futurepedia,https://aircall.io/
+2026-08-11T16:20:57.732098,PAID,nice,PRODUCT,1.0,Futurepedia,https://nice.com/
+2026-08-11T16:20:57.732102,PAID,dixa,PRODUCT,1.0,Futurepedia,https://dixa.com/
+2026-08-11T16:20:57.732107,FREEMIUM,freshworks,PRODUCT,1.0,Futurepedia,https://freshworks.com/freshdesk
+2026-08-11T16:20:57.732112,PAID,sisense,PRODUCT,1.0,Futurepedia,https://sisense.com/
+2026-08-11T16:20:57.732116,FREEMIUM,hex,PRODUCT,1.0,Futurepedia,https://hex.tech/
+2026-08-11T16:20:57.732121,PAID,reamaze,PRODUCT,1.0,Futurepedia,https://reamaze.com/
+2026-08-11T16:20:57.732126,PAID,zendesk,PRODUCT,1.0,Futurepedia,https://ultimate.ai/
+2026-08-11T16:20:57.732137,FREEMIUM,akkio,PRODUCT,1.0,Futurepedia,https://akkio.com/
+2026-08-11T16:20:57.732143,PAID,alteryx,PRODUCT,1.0,Futurepedia,https://alteryx.com/
+2026-08-11T16:20:57.732148,FREEMIUM,datawrapper,PRODUCT,1.0,Futurepedia,https://datawrapper.de/
+2026-08-11T16:20:57.732160,FREEMIUM,rowsyournewaidataanalyst,PRODUCT,1.0,Futurepedia,https://rows.com/
+2026-08-11T16:20:57.732165,PAID,remote,PRODUCT,1.0,Futurepedia,https://remote.com/
+2026-08-11T16:20:57.732170,PAID,workday,PRODUCT,1.0,Futurepedia,https://workday.com/
+2026-08-11T16:20:57.732175,PAID,lever,PRODUCT,1.0,Futurepedia,https://lever.co/
+2026-08-11T16:20:57.732180,PAID,ashby,PRODUCT,1.0,Futurepedia,https://ashbyhq.com/
+2026-08-11T16:20:57.732184,PAID,bamboohr,PRODUCT,1.0,Futurepedia,https://bamboohr.com/
+2026-08-11T16:20:57.732189,PAID,recruiterflow,PRODUCT,1.0,Futurepedia,https://recruiterflow.com/
+2026-08-11T16:20:57.732194,FREE,googlelens,PRODUCT,1.0,Futurepedia,https://socratic.org/
+2026-08-11T16:20:57.732199,FREEMIUM,photomath,PRODUCT,1.0,Futurepedia,https://photomath.com/
+2026-08-11T16:20:57.732203,FREEMIUM,coursera,PRODUCT,1.0,Futurepedia,https://coursera.org/
+2026-08-11T16:20:57.732208,FREEMIUM,teachable,PRODUCT,1.0,Futurepedia,https://teachable.com/
+2026-08-11T16:20:57.732213,FREEMIUM,podia,PRODUCT,1.0,Futurepedia,https://podia.com/
+2026-08-11T16:20:57.732217,FREE,buoyhealth,PRODUCT,1.0,Futurepedia,https://buoyhealth.com/
+2026-08-11T16:20:57.732222,PAID,numerionlabs,PRODUCT,1.0,Futurepedia,https://numerionlabs.ai/
+2026-08-11T16:20:57.732226,PAID,paigeai,PRODUCT,1.0,Futurepedia,https://paige.ai/
+2026-08-11T16:20:57.732231,PAID,deepgenomics,PRODUCT,1.0,Futurepedia,https://deepgenomics.com/
+2026-08-11T16:20:57.732236,FREEMIUM,headspace,PRODUCT,1.0,Futurepedia,https://headspace.com/
+2026-08-11T16:20:57.732240,FREE,woebothealth,PRODUCT,1.0,Futurepedia,https://woebothealth.com/
+2026-08-11T16:20:57.732245,FREEMIUM,wysaeverydaymentalhealth,PRODUCT,1.0,Futurepedia,https://wysa.com/
+2026-08-11T16:20:57.732250,FREEMIUM,apple,PRODUCT,1.0,Futurepedia,https://apple.com/health
+2026-08-11T16:20:57.732254,PAID,ouraring,PRODUCT,1.0,Futurepedia,https://ouraring.com/
+2026-08-11T16:20:57.732259,PAID,harvey,PRODUCT,1.0,Futurepedia,https://harvey.ai/
+2026-08-11T16:20:57.732263,PAID,ironclad,PRODUCT,1.0,Futurepedia,https://ironcladapp.com/
+2026-08-11T16:20:57.732268,PAID,lexisnexis,PRODUCT,1.0,Futurepedia,https://www.lexisnexis.com/en-us/products/lex-machina.page
+2026-08-11T16:20:57.732273,PAID,gavel,PRODUCT,1.0,Futurepedia,https://gavel.io/
+2026-08-11T16:20:57.732278,PAID,lexisnexis,PRODUCT,1.0,Futurepedia,https://lexisnexis.com/
+2026-08-11T16:20:57.732283,FREEMIUM,alpacamarkets,PRODUCT,1.0,Futurepedia,https://alpaca.markets/
+2026-08-11T16:20:57.732287,FREE,numerai,PRODUCT,1.0,Futurepedia,https://numer.ai/
+2026-08-11T16:20:57.732292,PAID,alphasense,PRODUCT,1.0,Futurepedia,https://alpha-sense.com/
+2026-08-11T16:20:57.732297,FREEMIUM,brex,PRODUCT,1.0,Futurepedia,https://brex.com/
+2026-08-11T16:20:57.732307,FREEMIUM,plaid,PRODUCT,1.0,Futurepedia,https://plaid.com/
+2026-08-11T16:20:57.732312,PAID,alphasimplexgroup,PRODUCT,1.0,Futurepedia,https://alphasimplex.com/
+2026-08-11T16:20:57.732317,FREEMIUM,mailchimp,PRODUCT,1.0,Futurepedia,https://mailchimp.com/
+2026-08-11T16:20:57.732322,PAID,jacquard,PRODUCT,1.0,Futurepedia,https://jacquard.com/
+2026-08-11T16:20:57.732326,PAID,insiderone,PRODUCT,1.0,Futurepedia,https://insiderone.com/
+2026-08-11T16:20:57.732331,PAID,optimizely,PRODUCT,1.0,Futurepedia,https://optimizely.com/
+2026-08-11T16:20:57.732336,PAID,klue,PRODUCT,1.0,Futurepedia,https://klue.com/
+2026-08-11T16:20:57.732340,FREEMIUM,mention,PRODUCT,1.0,Futurepedia,https://mention.com/
+2026-08-11T16:20:57.732352,PAID,mangools,PRODUCT,1.0,Futurepedia,https://mangools.com/
+2026-08-11T16:20:57.732357,FREEMIUM,vidyard,PRODUCT,1.0,Futurepedia,https://vidyard.com/
+2026-08-11T16:20:57.732362,PAID,gongrevenueaios,PRODUCT,1.0,Futurepedia,https://gong.io/
+2026-08-11T16:20:57.732366,PAID,regieai,PRODUCT,1.0,Futurepedia,https://regie.ai/
+2026-08-11T16:20:57.732371,FREEMIUM,obsidian,PRODUCT,1.0,Futurepedia,https://obsidian.md/
+2026-08-11T16:20:57.732376,FREEMIUM,moengage,PRODUCT,1.0,Futurepedia,https://moengage.com/
+2026-08-11T16:20:57.732380,FREEMIUM,notion,PRODUCT,1.0,Futurepedia,https://notion.com/
+2026-08-11T16:20:57.732385,PAID,pipedrive,PRODUCT,1.0,Futurepedia,https://pipedrive.com/
+2026-08-11T16:20:57.732389,FREEMIUM,zapier,PRODUCT,1.0,Futurepedia,https://zapier.com/
+2026-08-11T16:20:57.732394,FREEMIUM,mondaycom,PRODUCT,1.0,Futurepedia,https://monday.com/
+2026-08-11T16:20:57.732398,FREEMIUM,asana,PRODUCT,1.0,Futurepedia,https://asana.com/
+2026-08-11T16:20:57.732403,FREEMIUM,flexibits,PRODUCT,1.0,Futurepedia,https://flexibits.com/fantastical
+2026-08-11T16:20:57.732408,FREEMIUM,smartsheet,PRODUCT,1.0,Futurepedia,https://smartsheet.com/
+2026-08-11T16:20:57.732412,FREEMIUM,shortwave,PRODUCT,1.0,Futurepedia,https://shortwave.com/
+2026-08-11T16:20:57.732417,PAID,workato,PRODUCT,1.0,Futurepedia,https://workato.com/
+2026-08-11T16:20:57.732422,FREEMIUM,typeform,PRODUCT,1.0,Futurepedia,https://typeform.com/
+2026-08-11T16:20:57.732426,FREEMIUM,taskade,PRODUCT,1.0,Futurepedia,https://taskade.com/
+2026-08-11T16:20:57.732431,PAID,textexpander,PRODUCT,1.0,Futurepedia,https://textexpander.com/
+2026-08-11T16:20:57.732435,FREEMIUM,statista,PRODUCT,1.0,Futurepedia,https://statista.com/
+2026-08-11T16:20:57.732440,FREEMIUM,humata,PRODUCT,1.0,Futurepedia,https://humata.ai/
+2026-08-11T16:20:57.732445,PAID,text,PRODUCT,1.0,Futurepedia,https://livechat.com/
+2026-08-11T16:20:57.732449,PAID,kayako,PRODUCT,1.0,Futurepedia,https://kayako.com/
+2026-08-11T16:20:57.732454,FREEMIUM,tidio,PRODUCT,1.0,Futurepedia,https://tidio.com/
+2026-08-11T16:20:57.732458,PAID,five9,PRODUCT,1.0,Futurepedia,https://five9.com/
+2026-08-11T16:20:57.732463,FREEMIUM,yellowai,PRODUCT,1.0,Futurepedia,https://yellow.ai/
+2026-08-11T16:20:57.732468,FREEMIUM,amazonwebservices,PRODUCT,1.0,Futurepedia,https://aws.amazon.com/lex
+2026-08-11T16:20:57.732473,FREE,thelenspatentandscholarlysearchandanalysis,PRODUCT,1.0,Futurepedia,https://lens.org/
+2026-08-11T16:20:57.732477,PAID,thoughtspot,PRODUCT,1.0,Futurepedia,https://thoughtspot.com/
+2026-08-11T16:20:57.732482,FREEMIUM,flourish,PRODUCT,1.0,Futurepedia,https://flourish.studio/
+2026-08-11T16:20:57.732487,PAID,googlecloud,PRODUCT,1.0,Futurepedia,https://cloud.google.com/looker
+2026-08-11T16:20:57.732491,PAID,zams,PRODUCT,1.0,Futurepedia,https://zams.com/
+2026-08-11T16:20:57.732496,PAID,strategy,PRODUCT,1.0,Futurepedia,https://strategy.com/
+2026-08-11T16:20:57.732500,FREEMIUM,dataiku,PRODUCT,1.0,Futurepedia,https://dataiku.com/
+2026-08-11T16:20:57.732505,PAID,rippling,PRODUCT,1.0,Futurepedia,https://rippling.com/
+2026-08-11T16:20:57.732510,FREEMIUM,amplitude,PRODUCT,1.0,Futurepedia,https://amplitude.com/
+2026-08-11T16:20:57.732514,PAID,harver,PRODUCT,1.0,Futurepedia,https://harver.com/gamified-assessments/
+2026-08-11T16:20:57.732519,FREEMIUM,edx,PRODUCT,1.0,Futurepedia,https://edx.org/
+2026-08-11T16:20:57.732524,FREEMIUM,atlassian,PRODUCT,1.0,Futurepedia,https://atlassian.com/software/confluence
+2026-08-11T16:20:57.732534,PAID,workable,PRODUCT,1.0,Futurepedia,https://workable.com/
+2026-08-11T16:20:57.732539,PAID,squirrelai,PRODUCT,1.0,Futurepedia,https://squirrelai.com/
+2026-08-11T16:20:57.732544,FREE,googleforhealth,PRODUCT,1.0,Futurepedia,https://health.google/
+2026-08-11T16:20:57.732549,PAID,regard,PRODUCT,1.0,Futurepedia,https://regard.com/
+2026-08-11T16:20:57.732553,FREEMIUM,googlestore,PRODUCT,1.0,Futurepedia,https://store.google.com/category/watches_trackers
+2026-08-11T16:20:57.732558,PAID,thomsonreuters,PRODUCT,1.0,Futurepedia,https://casetext.com/
+2026-08-11T16:20:57.732563,PAID,litera,PRODUCT,1.0,Futurepedia,https://www.litera.com/products/kira
+2026-08-11T16:20:57.732568,PAID,avature,PRODUCT,1.0,Futurepedia,https://avature.net/
+2026-08-11T16:20:57.732572,PAID,cloudnativeediscoverysoftwareeverlaw,PRODUCT,1.0,Futurepedia,https://everlaw.com/
+2026-08-11T16:20:57.732577,PAID,legalzoom,PRODUCT,1.0,Futurepedia,https://legalzoom.com/
+2026-08-11T16:20:57.732582,PAID,relativity,PRODUCT,1.0,Futurepedia,https://relativity.com/
+2026-08-11T16:20:57.732586,FREEMIUM,donotpay,PRODUCT,1.0,Futurepedia,https://donotpay.com/
+2026-08-11T16:20:57.732591,PAID,ebrevia,PRODUCT,1.0,Futurepedia,https://ebrevia.com/
+2026-08-11T16:20:57.732595,PAID,betterment,PRODUCT,1.0,Futurepedia,https://betterment.com/
+2026-08-11T16:20:57.732600,PAID,josef,PRODUCT,1.0,Futurepedia,https://joseflegal.com/
+2026-08-11T16:20:57.732604,PAID,stripe,PRODUCT,1.0,Futurepedia,https://stripe.com/
+2026-08-11T16:20:57.732609,PAID,tipalti,PRODUCT,1.0,Futurepedia,https://tipalti.com/
+2026-08-11T16:20:57.732613,PAID,freshbooks,PRODUCT,1.0,Futurepedia,https://freshbooks.com/
+2026-08-11T16:20:57.732618,PAID,runway,PRODUCT,1.0,Futurepedia,https://runway.com/
+2026-08-11T16:20:57.732623,FREEMIUM,expensify,PRODUCT,1.0,Futurepedia,https://expensify.com/
+2026-08-11T16:20:57.732627,PAID,quantexa,PRODUCT,1.0,Futurepedia,https://www.quantexa.com/solutions/news-intelligence/
+2026-08-11T16:20:57.732632,FREEMIUM,yotpo,PRODUCT,1.0,Futurepedia,https://yotpo.com/
+2026-08-11T16:20:57.732637,FREEMIUM,pixelcut,PRODUCT,1.0,Futurepedia,https://pixelcut.ai/
+2026-08-11T16:20:57.732641,PAID,syte,PRODUCT,1.0,Futurepedia,https://syte.ai/
+2026-08-11T16:20:57.732646,FREEMIUM,landr,PRODUCT,1.0,Futurepedia,https://landr.com/
+2026-08-11T16:20:57.732650,PAID,activecampaign,PRODUCT,1.0,Futurepedia,https://activecampaign.com/
+2026-08-11T16:20:57.732655,PAID,alberttechnologies,PRODUCT,1.0,Futurepedia,https://albert.ai/
+2026-08-11T16:20:57.732659,FREEMIUM,adzoomablog,PRODUCT,1.0,Futurepedia,https://adzooma.com/
+2026-08-11T16:20:57.732664,PAID,iterable,PRODUCT,1.0,Futurepedia,https://iterable.com/
+2026-08-11T16:20:57.732668,PAID,drip,PRODUCT,1.0,Futurepedia,https://drip.com/
+2026-08-11T16:20:57.732673,PAID,salesforce,PRODUCT,1.0,Futurepedia,https://salesforce.com/products/marketing-cloud
+2026-08-11T16:20:57.732678,FREEMIUM,rankmath,PRODUCT,1.0,Futurepedia,https://rankmath.com/
+2026-08-11T16:20:57.732683,PAID,buzzsumocom,PRODUCT,1.0,Futurepedia,https://buzzsumo.com/
+2026-08-11T16:20:57.732687,FREEMIUM,hubspot,PRODUCT,1.0,Futurepedia,https://hubspot.com/products/sales
+2026-08-11T16:20:57.732698,PAID,outreach,PRODUCT,1.0,Futurepedia,https://www.outreach.ai/
+2026-08-11T16:20:57.732704,PAID,neuronwriter,PRODUCT,1.0,Futurepedia,https://neuronwriter.com/
+2026-08-11T16:20:57.732710,FREEMIUM,omnisend,PRODUCT,1.0,Futurepedia,https://omnisend.com/
+2026-08-11T16:20:57.732719,FREEMIUM,serpstat,PRODUCT,1.0,Futurepedia,https://serpstat.com/
+2026-08-11T16:20:57.732724,PAID,salesforce,PRODUCT,1.0,Futurepedia,https://salesforce.com/einstein
+2026-08-11T16:20:57.732729,PAID,webengage,PRODUCT,1.0,Futurepedia,https://webengage.com/
+2026-08-11T16:20:57.732734,FREEMIUM,loom,PRODUCT,1.0,Futurepedia,https://loom.com/
+2026-08-11T16:20:57.732739,FREEMIUM,leadiq,PRODUCT,1.0,Futurepedia,https://leadiq.com/
+2026-08-11T16:20:57.732744,FREEMIUM,screamingfrog,PRODUCT,1.0,Futurepedia,https://screamingfrog.co.uk/
+2026-08-11T16:20:57.732748,FREEMIUM,calendly,PRODUCT,1.0,Futurepedia,https://calendly.com/
+2026-08-11T16:20:57.732753,FREEMIUM,capacities,PRODUCT,1.0,Futurepedia,https://capacities.io/
+2026-08-11T16:20:57.732758,FREEMIUM,craftdocs,PRODUCT,1.0,Futurepedia,https://craft.do/
+2026-08-11T16:20:57.732762,FREEMIUM,ifttt,PRODUCT,1.0,Futurepedia,https://ifttt.com/
+2026-08-11T16:20:57.732767,FREEMIUM,freshworks,PRODUCT,1.0,Futurepedia,https://freshworks.com/crm/sales
+2026-08-11T16:20:57.732772,PAID,basecamp,PRODUCT,1.0,Futurepedia,https://basecamp.com/
+2026-08-11T16:20:57.732777,FREEMIUM,hive,PRODUCT,1.0,Futurepedia,https://hive.com/
+2026-08-11T16:20:57.732781,FREEMIUM,shortcut,PRODUCT,1.0,Futurepedia,https://shortcut.com/
+2026-08-11T16:20:57.732786,FREEMIUM,tally,PRODUCT,1.0,Futurepedia,https://tally.so/
+2026-08-11T16:20:57.732790,PAID,sanebox,PRODUCT,1.0,Futurepedia,https://sanebox.com/
+2026-08-11T16:20:57.732795,PAID,irisai,PRODUCT,1.0,Futurepedia,https://iris.ai/
+2026-08-11T16:20:57.732800,FREEMIUM,trinkaai,PRODUCT,1.0,Futurepedia,https://trinka.ai/
+2026-08-11T16:20:57.732805,FREE,paperdigest,PRODUCT,1.0,Futurepedia,https://paperdigest.org/
+2026-08-11T16:20:57.732809,PAID,forethought,PRODUCT,1.0,Futurepedia,https://forethought.ai/
+2026-08-11T16:20:57.732814,FREEMIUM,voiceflow,PRODUCT,1.0,Futurepedia,https://voiceflow.com/
+2026-08-11T16:20:57.732819,FREEMIUM,googlecloud,PRODUCT,1.0,Futurepedia,https://cloud.google.com/dialogflow
+2026-08-11T16:20:57.732824,PAID,genesyscloud,PRODUCT,1.0,Futurepedia,https://genesys.com/
+2026-08-11T16:20:57.732828,PAID,qlik,PRODUCT,1.0,Futurepedia,https://qlik.com/
+2026-08-11T16:20:57.732833,FREEMIUM,polymer,PRODUCT,1.0,Futurepedia,https://polymersearch.com/
+2026-08-11T16:20:57.732838,PAID,pecanai,PRODUCT,1.0,Futurepedia,https://pecan.ai/
+2026-08-11T16:20:57.732842,FREEMIUM,fullstory,PRODUCT,1.0,Futurepedia,https://fullstory.com/
+2026-08-11T16:20:57.732847,PAID,dominodatalab,PRODUCT,1.0,Futurepedia,https://domino.ai/
+2026-08-11T16:20:57.732852,PAID,eightfold,PRODUCT,1.0,Futurepedia,https://eightfold.ai/
+2026-08-11T16:20:57.732856,PAID,smartrecruiters,PRODUCT,1.0,Futurepedia,https://smartrecruiters.com/
+2026-08-11T16:20:57.732861,PAID,icims,PRODUCT,1.0,Futurepedia,https://icims.com/
+2026-08-11T16:20:57.732866,FREEMIUM,kahoot,PRODUCT,1.0,Futurepedia,https://kahoot.com/
+2026-08-11T16:20:57.732870,FREEMIUM,remnote,PRODUCT,1.0,Futurepedia,https://remnote.com/
+2026-08-11T16:20:57.732875,PAID,fetcheraicandidatesourcingtoolsforrecruiters,PRODUCT,1.0,Futurepedia,https://fetcher.ai/
+2026-08-11T16:20:57.732880,FREEMIUM,edpuzzle,PRODUCT,1.0,Futurepedia,https://edpuzzle.com/
+2026-08-11T16:20:57.732884,FREEMIUM,nearpod,PRODUCT,1.0,Futurepedia,https://nearpod.com/
+2026-08-11T16:20:57.732889,FREEMIUM,explaineverything,PRODUCT,1.0,Futurepedia,https://explaineverything.com/
+2026-08-11T16:20:57.732894,FREEMIUM,infermedica,PRODUCT,1.0,Futurepedia,https://infermedica.com/
+2026-08-11T16:20:57.732903,PAID,learnworlds,PRODUCT,1.0,Futurepedia,https://learnworlds.com/
+2026-08-11T16:20:57.732908,PAID,freenome,PRODUCT,1.0,Futurepedia,https://freenome.com/
+2026-08-11T16:20:57.732913,PAID,abridge,PRODUCT,1.0,Futurepedia,https://abridge.com/
+2026-08-11T16:20:57.732917,PAID,aidocclinicalai,PRODUCT,1.0,Futurepedia,https://aidoc.com/
+2026-08-11T16:20:57.732922,PAID,sukiai,PRODUCT,1.0,Futurepedia,https://suki.ai/
+2026-08-11T16:20:57.732927,PAID,microsoftresearch,PRODUCT,1.0,Futurepedia,https://microsoft.com/en-us/research/project/health-bot
+2026-08-11T16:20:57.732932,PAID,vlex,PRODUCT,1.0,Futurepedia,https://vlex.com/
+2026-08-11T16:20:57.732936,PAID,spotdraft,PRODUCT,1.0,Futurepedia,https://spotdraft.com/
+2026-08-11T16:20:57.732941,PAID,kenshospglobalsaiengineenterprisedataretrieval,PRODUCT,1.0,Futurepedia,https://kensho.com/
+2026-08-11T16:20:57.732946,PAID,workday,PRODUCT,1.0,Futurepedia,https://www.workday.com/en-us/products/adaptive-planning/overview.html
+2026-08-11T16:20:57.732951,PAID,nanox,PRODUCT,1.0,Futurepedia,https://www.nanox.vision/
+2026-08-11T16:20:57.732956,FREEMIUM,wave,PRODUCT,1.0,Futurepedia,https://waveapps.com/
+2026-08-11T16:20:57.732961,PAID,cube,PRODUCT,1.0,Futurepedia,https://cubesoftware.com/
+2026-08-11T16:20:57.732966,FREEMIUM,visible,PRODUCT,1.0,Futurepedia,https://visible.vc/
+2026-08-11T16:20:57.732970,FREEMIUM,angellist,PRODUCT,1.0,Futurepedia,https://angellist.com/
+2026-08-11T16:20:57.732975,PAID,liveplan,PRODUCT,1.0,Futurepedia,https://liveplan.com/
+2026-08-11T16:20:57.732980,PAID,semrush,PRODUCT,1.0,Futurepedia,https://semrush.com/
+2026-08-11T16:20:57.732984,FREEMIUM,klaviyo,PRODUCT,1.0,Futurepedia,https://klaviyo.com/
+2026-08-11T16:20:57.732989,PAID,seventhsense,PRODUCT,1.0,Futurepedia,https://theseventhsense.com/
+2026-08-11T16:20:57.732994,PAID,seranking,PRODUCT,1.0,Futurepedia,https://seranking.com/
+2026-08-11T16:20:57.732999,PAID,customerioaipoweredcustomerengagementplatform,PRODUCT,1.0,Futurepedia,https://customer.io/
+2026-08-11T16:20:57.733003,FREEMIUM,clevertap,PRODUCT,1.0,Futurepedia,https://clevertap.com/
+2026-08-11T16:20:57.733008,PAID,elaiio,PRODUCT,1.0,Futurepedia,https://elai.io/
+2026-08-11T16:20:57.733012,FREEMIUM,chatfuel,PRODUCT,1.0,Futurepedia,https://chatfuel.com/
+2026-08-11T16:20:57.733017,PAID,writerzen,PRODUCT,1.0,Futurepedia,https://writerzen.net/
+2026-08-11T16:20:57.733022,PAID,meltwater,PRODUCT,1.0,Futurepedia,https://meltwater.com/
+2026-08-11T16:20:57.733026,FREEMIUM,apolloio,PRODUCT,1.0,Futurepedia,https://apollo.io/
+2026-08-11T16:20:57.733031,PAID,clari,PRODUCT,1.0,Futurepedia,https://clari.com/
+2026-08-11T16:20:57.733036,PAID,close,PRODUCT,1.0,Futurepedia,https://close.com/
+2026-08-11T16:20:57.733040,PAID,roamresearch,PRODUCT,1.0,Futurepedia,https://roamresearch.com/
+2026-08-11T16:20:57.733045,FREEMIUM,tana,PRODUCT,1.0,Futurepedia,https://tana.inc/
+2026-08-11T16:20:57.733049,PAID,nutshell,PRODUCT,1.0,Futurepedia,https://nutshell.com/
+2026-08-11T16:20:57.733054,PAID,trayai,PRODUCT,1.0,Futurepedia,https://tray.ai/
+2026-08-11T16:20:57.733059,FREEMIUM,parabola,PRODUCT,1.0,Futurepedia,https://parabola.io/
+2026-08-11T16:20:57.733063,FREEMIUM,clickup,PRODUCT,1.0,Futurepedia,https://clickup.com/
+2026-08-11T16:20:57.733068,FREEMIUM,atlassian,PRODUCT,1.0,Futurepedia,https://atlassian.com/software/jira
+2026-08-11T16:20:57.733074,PAID,front,PRODUCT,1.0,Futurepedia,https://front.com/
+2026-08-11T16:20:57.733082,FREEMIUM,tango,PRODUCT,1.0,Futurepedia,https://tango.ai/
+2026-08-11T16:20:57.733087,FREEMIUM,magical,PRODUCT,1.0,Futurepedia,https://getmagical.com/
+2026-08-11T16:20:57.733092,FREEMIUM,jotform,PRODUCT,1.0,Futurepedia,https://jotform.com/
+2026-08-11T16:20:57.733097,FREEMIUM,teamworkcom,PRODUCT,1.0,Futurepedia,https://teamwork.com/
+2026-08-11T16:20:57.733101,PAID,endnote,PRODUCT,1.0,Futurepedia,https://endnote.com/
+2026-08-11T16:20:57.733106,FREE,pubmed,PRODUCT,1.0,Futurepedia,https://pubmed.ncbi.nlm.nih.gov/
+2026-08-11T16:20:57.733111,PAID,kustomer,PRODUCT,1.0,Futurepedia,https://kustomer.com/
+2026-08-11T16:20:57.733115,FREEMIUM,screenpal,PRODUCT,1.0,Futurepedia,https://screenpal.com/
+2026-08-11T16:20:57.733120,PAID,zendesk,PRODUCT,1.0,Futurepedia,https://zendesk.com/
+2026-08-11T16:20:57.733125,PAID,talkdesk,PRODUCT,1.0,Futurepedia,https://talkdesk.com/
+2026-08-11T16:20:57.733130,PAID,replicant,PRODUCT,1.0,Futurepedia,https://replicant.com/
+2026-08-11T16:20:57.733134,PAID,text,PRODUCT,1.0,Futurepedia,https://chatbot.com/
+2026-08-11T16:20:57.733139,PAID,gladly,PRODUCT,1.0,Futurepedia,https://gladly.com/
+2026-08-11T16:20:57.733144,PAID,datarobot,PRODUCT,1.0,Futurepedia,https://datarobot.com/
+2026-08-11T16:20:57.733149,FREEMIUM,deepnote,PRODUCT,1.0,Futurepedia,https://deepnote.com/
+2026-08-11T16:20:57.733153,FREEMIUM,heap,PRODUCT,1.0,Futurepedia,https://heap.io/
+2026-08-11T16:20:57.733158,FREEMIUM,siemens,PRODUCT,1.0,Futurepedia,https://altair.com/rapidminer
+2026-08-11T16:20:57.733163,PAID,hirevue,PRODUCT,1.0,Futurepedia,https://hirevue.com/
+2026-08-11T16:20:57.733167,PAID,oyster,PRODUCT,1.0,Futurepedia,https://oysterhr.com/
+2026-08-11T16:20:57.733172,PAID,textio,PRODUCT,1.0,Futurepedia,https://textio.com/
+2026-08-11T16:20:57.733177,PAID,seekout,PRODUCT,1.0,Futurepedia,https://seekout.com/
+2026-08-11T16:20:57.733181,FREEMIUM,duolingo,PRODUCT,1.0,Futurepedia,https://duolingo.com/
+2026-08-11T16:20:57.733186,FREEMIUM,ada,PRODUCT,1.0,Futurepedia,https://ada.com/
+2026-08-11T16:20:57.733191,PAID,benevolentaiamsbai,PRODUCT,1.0,Futurepedia,https://www.benevolent.com/
+2026-08-11T16:20:57.733196,PAID,phenom,PRODUCT,1.0,Futurepedia,https://phenom.com/
+2026-08-11T16:20:57.733200,PAID,vizaitheprovenaipoweredcarecoordinationplatform,PRODUCT,1.0,Futurepedia,https://viz.ai/
+2026-08-11T16:20:57.733205,FREEMIUM,nvidia,PRODUCT,1.0,Futurepedia,https://nvidia.com/en-us/clara
+2026-08-11T16:20:57.733210,PAID,luminancelegalgradetmai,PRODUCT,1.0,Futurepedia,https://luminance.com/
+2026-08-11T16:20:57.733215,PAID,qventus,PRODUCT,1.0,Futurepedia,https://qventus.com/
+2026-08-11T16:20:57.733219,FREEMIUM,square,PRODUCT,1.0,Futurepedia,https://squareup.com/
+2026-08-11T16:20:57.733224,PAID,pilot,PRODUCT,1.0,Futurepedia,https://pilot.com/
+2026-08-11T16:20:57.733229,PAID,xero,PRODUCT,1.0,Futurepedia,https://xero.com/
+2026-08-11T16:20:57.733234,PAID,venasolutions,PRODUCT,1.0,Futurepedia,https://venasolutions.com/
+2026-08-11T16:20:57.733238,PAID,avalara,PRODUCT,1.0,Futurepedia,https://avalara.com/
+2026-08-11T16:20:57.733243,PAID,chargebee,PRODUCT,1.0,Futurepedia,https://chargebee.com/
+2026-08-11T16:20:57.733247,PAID,recurly,PRODUCT,1.0,Futurepedia,https://recurly.com/
+2026-08-11T16:20:57.733252,PAID,searchspring,PRODUCT,1.0,Futurepedia,https://searchspring.com/
+2026-08-11T16:20:57.733257,FREEMIUM,algolia,PRODUCT,1.0,Futurepedia,https://algolia.com/
+2026-08-11T16:20:57.733265,PAID,okendopty,PRODUCT,1.0,Futurepedia,https://okendo.io/
+2026-08-11T16:20:57.733270,PAID,copysmith,PRODUCT,1.0,Futurepedia,https://copysmith.ai/
+2026-08-11T16:20:57.733275,PAID,describely,PRODUCT,1.0,Futurepedia,https://describely.ai/
+2026-08-11T16:20:57.733280,FREEMIUM,route,PRODUCT,1.0,Futurepedia,https://route.com/
+2026-08-11T16:20:57.733284,PAID,bloomreach,PRODUCT,1.0,Futurepedia,https://bloomreach.com/
+2026-08-11T16:20:57.733289,FREEMIUM,helium10,PRODUCT,1.0,Futurepedia,https://helium10.com/
+2026-08-11T16:20:57.733294,FREEMIUM,weglottranslateyourwebsiteinstantly,PRODUCT,1.0,Futurepedia,https://weglot.com/
+2026-08-11T16:20:57.733299,FREEMIUM,lingvanex,PRODUCT,1.0,Futurepedia,https://lingvanex.com/
+2026-08-11T16:20:57.733303,PAID,phrase,PRODUCT,1.0,Futurepedia,https://phrase.com/
+2026-08-11T16:20:57.733308,FREEMIUM,textunited,PRODUCT,1.0,Futurepedia,https://textunited.com/
+2026-08-11T16:20:57.733313,PAID,anaplan,PRODUCT,1.0,Futurepedia,https://anaplan.com/
+2026-08-11T16:20:57.733317,PAID,nosto,PRODUCT,1.0,Futurepedia,https://nosto.com/
+2026-08-11T16:20:57.733322,FREEMIUM,amazonwebservices,PRODUCT,1.0,Futurepedia,https://aws.amazon.com/translate
+2026-08-11T16:20:57.733327,FREE,naverpapago,PRODUCT,1.0,Futurepedia,https://papago.naver.com/
+2026-08-11T16:20:57.733331,FREEMIUM,transifex,PRODUCT,1.0,Futurepedia,https://transifex.com/
+2026-08-11T16:20:57.733336,PAID,lokalise,PRODUCT,1.0,Futurepedia,https://lokalise.com/
+2026-08-11T16:20:57.733341,PAID,crowdstrike,PRODUCT,1.0,Futurepedia,https://crowdstrike.com/
+2026-08-11T16:20:57.733345,PAID,sentinelone,PRODUCT,1.0,Futurepedia,https://sentinelone.com/
+2026-08-11T16:20:57.733350,PAID,vectraai,PRODUCT,1.0,Futurepedia,https://vectra.ai/
+2026-08-11T16:20:57.733354,PAID,pentera,PRODUCT,1.0,Futurepedia,https://pentera.io/
+2026-08-11T16:20:57.733359,PAID,hackerone,PRODUCT,1.0,Futurepedia,https://hackerone.com/
+2026-08-11T16:20:57.733364,FREEMIUM,wise,PRODUCT,1.0,Futurepedia,https://wise.com/
+2026-08-11T16:20:57.733368,PAID,shopify,PRODUCT,1.0,Futurepedia,https://shopify.com/
+2026-08-11T16:20:57.733373,PAID,paddle,PRODUCT,1.0,Futurepedia,https://paddle.com/
+2026-08-11T16:20:57.733378,PAID,clerkio,PRODUCT,1.0,Futurepedia,https://clerk.io/
+2026-08-11T16:20:57.733382,PAID,taxjar,PRODUCT,1.0,Futurepedia,https://taxjar.com/
+2026-08-11T16:20:57.733387,PAID,feedvisor,PRODUCT,1.0,Futurepedia,https://feedvisor.com/
+2026-08-11T16:20:57.733392,PAID,junglescout,PRODUCT,1.0,Futurepedia,https://junglescout.com/
+2026-08-11T16:20:57.733396,FREEMIUM,deepl,PRODUCT,1.0,Futurepedia,https://deepl.com/
+2026-08-11T16:20:57.733401,PAID,unbabel,PRODUCT,1.0,Futurepedia,https://unbabel.com/
+2026-08-11T16:20:57.733406,FREE,lingueecom,PRODUCT,1.0,Futurepedia,https://linguee.com/
+2026-08-11T16:20:57.733410,PAID,checkpointsoftwaretechnologies,PRODUCT,1.0,Futurepedia,https://checkpoint.com/
+2026-08-11T16:20:57.733415,PAID,fortinet,PRODUCT,1.0,Futurepedia,https://fortinet.com/
+2026-08-11T16:20:57.733420,FREEMIUM,elastic,PRODUCT,1.0,Futurepedia,https://elastic.co/security
+2026-08-11T16:20:57.733424,PAID,checkmarx,PRODUCT,1.0,Futurepedia,https://checkmarx.com/
+2026-08-11T16:20:57.733429,PAID,bugcrowd,PRODUCT,1.0,Futurepedia,https://bugcrowd.com/
+2026-08-11T16:20:57.733434,FREE,appstore,PRODUCT,1.0,Futurepedia,https://apps.apple.com/us/app/translate/id1514844618
+2026-08-11T16:20:57.733439,PAID,returngo,PRODUCT,1.0,Futurepedia,https://returngo.ai/
+2026-08-11T16:20:57.733447,PAID,translated,PRODUCT,1.0,Futurepedia,https://translated.com/
+2026-08-11T16:20:57.733452,PAID,memoq,PRODUCT,1.0,Futurepedia,https://memoq.com/
+2026-08-11T16:20:57.733457,PAID,paloaltonetworks,PRODUCT,1.0,Futurepedia,https://paloaltonetworks.com/cortex
+2026-08-11T16:20:57.733462,PAID,exabeam,PRODUCT,1.0,Futurepedia,https://exabeam.com/
+2026-08-11T16:20:57.733467,FREEMIUM,sumologic,PRODUCT,1.0,Futurepedia,https://sumologic.com/
+2026-08-11T16:20:57.733472,PAID,materialsecurity,PRODUCT,1.0,Futurepedia,https://material.security/
+2026-08-11T16:20:57.733476,PAID,paloaltonetworks,PRODUCT,1.0,Futurepedia,https://paloaltonetworks.com/cortex/xsoar
+2026-08-11T16:20:57.733481,PAID,proofpoint,PRODUCT,1.0,Futurepedia,https://www.proofpoint.com/
+2026-08-11T16:20:57.733486,PAID,wizio,PRODUCT,1.0,Futurepedia,https://wiz.io/
+2026-08-11T16:20:57.733491,PAID,darktrace,PRODUCT,1.0,Futurepedia,https://darktrace.com/
+2026-08-11T16:20:57.733495,PAID,dataminr,PRODUCT,1.0,Futurepedia,https://www.dataminr.com/
+2026-08-11T16:20:57.733500,PAID,anomali,PRODUCT,1.0,Futurepedia,https://anomali.com/
+2026-08-11T16:20:57.733505,PAID,abnormalai,PRODUCT,1.0,Futurepedia,https://abnormal.ai/
+2026-08-11T16:20:57.733509,PAID,exabeam,PRODUCT,1.0,Futurepedia,https://logrhythm.com/
+2026-08-11T16:20:57.733514,PAID,veracode,PRODUCT,1.0,Futurepedia,https://veracode.com/
+2026-08-11T16:20:57.733518,PAID,splunk,PRODUCT,1.0,Futurepedia,https://splunk.com/
+2026-08-11T16:20:57.733523,PAID,fortinet,PRODUCT,1.0,Futurepedia,https://www.fortinet.com/products/forticnapp
+2026-08-11T16:20:57.733528,FREEMIUM,relevanceai,PRODUCT,1.0,Futurepedia,https://relevanceai.com/
+2026-08-11T16:20:57.733532,FREEMIUM,sonar,PRODUCT,1.0,Futurepedia,https://sonarsource.com/
+2026-08-11T16:20:57.733537,PAID,aquasecurity,PRODUCT,1.0,Futurepedia,https://aquasec.com/
+2026-08-11T16:20:57.733542,FREEMIUM,retool,PRODUCT,1.0,Futurepedia,https://retool.com/
+2026-08-11T16:20:57.733546,PAID,qualys,PRODUCT,1.0,Futurepedia,https://qualys.com/
+2026-08-11T16:20:57.733551,FREEMIUM,bubble,PRODUCT,1.0,Futurepedia,https://bubble.io/
+2026-08-11T16:20:57.733555,PAID,tenable,PRODUCT,1.0,Futurepedia,https://tenable.com/
+2026-08-11T16:20:57.733560,FREEMIUM,adalo,PRODUCT,1.0,Futurepedia,https://adalo.com/
+2026-08-11T16:20:57.733565,FREEMIUM,neon,PRODUCT,1.0,Futurepedia,https://neon.com/
+2026-08-11T16:20:57.733569,FREEMIUM,mendio,PRODUCT,1.0,Futurepedia,https://mend.io/
+2026-08-11T16:20:57.733574,FREEMIUM,upstash,PRODUCT,1.0,Futurepedia,https://upstash.com/
+2026-08-11T16:20:57.733579,FREEMIUM,firebase,PRODUCT,1.0,Futurepedia,https://firebase.google.com/
+2026-08-11T16:20:57.733584,FREEMIUM,planetscale,PRODUCT,1.0,Futurepedia,https://planetscale.com/
+2026-08-11T16:20:57.733588,FREEMIUM,vercel,PRODUCT,1.0,Futurepedia,https://vercel.com/
+2026-08-11T16:20:57.733593,FREEMIUM,convex,PRODUCT,1.0,Futurepedia,https://convex.dev/
+2026-08-11T16:20:57.733598,FREEMIUM,cloudflare,PRODUCT,1.0,Futurepedia,https://developers.cloudflare.com/workers-ai
+2026-08-11T16:20:57.733603,PAID,sproutsocial,PRODUCT,1.0,Futurepedia,https://sproutsocial.com/
+2026-08-11T16:20:57.733607,FREEMIUM,netlify,PRODUCT,1.0,Futurepedia,https://netlify.com/
+2026-08-11T16:20:57.733612,FREEMIUM,railway,PRODUCT,1.0,Futurepedia,https://railway.com/
+2026-08-11T16:20:57.733616,FREEMIUM,render,PRODUCT,1.0,Futurepedia,https://render.com/
+2026-08-11T16:20:57.733621,FREEMIUM,planoly,PRODUCT,1.0,Futurepedia,https://planoly.com/
+2026-08-11T16:20:57.733629,FREEMIUM,flyio,PRODUCT,1.0,Futurepedia,https://fly.io/
+2026-08-11T16:20:57.733635,FREEMIUM,softr,PRODUCT,1.0,Futurepedia,https://softr.io/
+2026-08-11T16:20:57.733640,PAID,socialmediamarketingandmanagementtoolhootsuite,PRODUCT,1.0,Futurepedia,https://hootsuite.com/
+2026-08-11T16:20:57.733644,FREEMIUM,later,PRODUCT,1.0,Futurepedia,https://later.com/
+2026-08-11T16:20:57.733649,FREEMIUM,buffer,PRODUCT,1.0,Futurepedia,https://buffer.com/
+2026-08-11T16:20:57.733654,FREEMIUM,publer,PRODUCT,1.0,Futurepedia,https://publer.com/
+2026-08-11T16:20:57.733658,PAID,iconosquare,PRODUCT,1.0,Futurepedia,https://iconosquare.com/
+2026-08-11T16:20:57.733663,PAID,sendible,PRODUCT,1.0,Futurepedia,https://sendible.com/
+2026-08-11T16:20:57.733667,FREEMIUM,crowdin,PRODUCT,1.0,Futurepedia,https://crowdin.com/
+2026-08-11T16:20:57.733672,FREEMIUM,coschedule,PRODUCT,1.0,Futurepedia,https://coschedule.com/
+2026-08-11T16:20:57.733677,PAID,socialbee,PRODUCT,1.0,Futurepedia,https://socialbee.com/
+2026-08-11T16:20:57.733681,FREEMIUM,socialpilot,PRODUCT,1.0,Futurepedia,https://socialpilot.co/
+2026-08-11T16:20:57.733686,FREEMIUM,predisai,PRODUCT,1.0,Futurepedia,https://predis.ai/
+2026-08-11T16:20:57.733691,FREEMIUM,agorapulse,PRODUCT,1.0,Futurepedia,https://agorapulse.com/
+2026-08-11T16:20:57.733696,PAID,sprinklr,PRODUCT,1.0,Futurepedia,https://sprinklr.com/
+2026-08-11T16:20:57.733700,FREEMIUM,contentstudio,PRODUCT,1.0,Futurepedia,https://contentstudio.io/
+2026-08-11T16:20:57.733705,FREEMIUM,xano,PRODUCT,1.0,Futurepedia,https://xano.com/
+2026-08-11T16:20:57.733710,PAID,taplio,PRODUCT,1.0,Futurepedia,https://taplio.com/
+2026-08-11T16:20:57.733715,FREEMIUM,matterport,PRODUCT,1.0,Futurepedia,https://matterport.com/
+2026-08-11T16:20:57.733719,PAID,rechat,PRODUCT,1.0,Futurepedia,https://rechat.ai/
+2026-08-11T16:20:57.733724,FREEMIUM,missinglettr,PRODUCT,1.0,Futurepedia,https://missinglettr.com/
+2026-08-11T16:20:57.733728,FREE,buffer,PRODUCT,1.0,Futurepedia,https://pablo.buffer.com/
+2026-08-11T16:20:57.733733,PAID,brandwatch,PRODUCT,1.0,Futurepedia,https://brandwatch.com/
+2026-08-11T16:20:57.733738,FREE,zillow,PRODUCT,1.0,Futurepedia,https://zillow.com/
+2026-08-11T16:20:57.733742,FREE,compass,PRODUCT,1.0,Futurepedia,https://compass.com/
+2026-08-11T16:20:57.733747,PAID,roofai,PRODUCT,1.0,Futurepedia,https://roofai.com/
+2026-08-11T16:20:57.733752,PAID,ylopo,PRODUCT,1.0,Futurepedia,https://ylopo.com/
+2026-08-11T16:20:57.733756,PAID,insiderealestate,PRODUCT,1.0,Futurepedia,https://insiderealestate.com/
+2026-08-11T16:20:57.733761,PAID,lofty,PRODUCT,1.0,Futurepedia,https://lofty.com/
+2026-08-11T16:20:57.733766,PAID,smartsheet,PRODUCT,1.0,Futurepedia,https://www.smartsheet.com/ai
+2026-08-11T16:20:57.733771,FREE,notion,PRODUCT,1.0,Futurepedia,https://www.notion.com/product/calendar
+2026-08-11T16:20:57.733776,PAID,housecanary,PRODUCT,1.0,Futurepedia,https://housecanary.com/
+2026-08-11T16:20:57.733780,FREEMIUM,nifty,PRODUCT,1.0,Futurepedia,https://niftypm.com/
+2026-08-11T16:20:57.733785,FREEMIUM,whimsical,PRODUCT,1.0,Futurepedia,https://whimsical.com/
+2026-08-11T16:20:57.733790,FREEMIUM,zoho,PRODUCT,1.0,Futurepedia,https://zoho.com/projects
+2026-08-11T16:20:57.733794,FREE,drawio,PRODUCT,1.0,Futurepedia,https://www.drawio.com/
+2026-08-11T16:20:57.733799,FREE,excalidraw,PRODUCT,1.0,Futurepedia,https://excalidraw.com/
+2026-08-11T16:20:57.733804,FREEMIUM,eraser,PRODUCT,1.0,Futurepedia,https://eraser.io/
+2026-08-11T16:20:57.733816,PAID,restbai,PRODUCT,1.0,Futurepedia,https://restb.ai/
+2026-08-11T16:20:57.733821,FREEMIUM,askyourpdf,PRODUCT,1.0,Futurepedia,https://askyourpdf.com/
+2026-08-11T16:20:57.733826,FREEMIUM,lucidsoftware,PRODUCT,1.0,Futurepedia,https://lucidchart.com/
+2026-08-11T16:20:57.733831,FREEMIUM,lightpdf,PRODUCT,1.0,Futurepedia,https://lightpdf.com/
+2026-08-11T16:20:57.733835,FREEMIUM,transactionalemailapiservicefordevelopersmailgun,PRODUCT,1.0,Futurepedia,https://mailgun.com/
+2026-08-11T16:20:57.733840,FREEMIUM,twilio,PRODUCT,1.0,Futurepedia,https://twilio.com/
+2026-08-11T16:20:57.733845,FREEMIUM,slack,PRODUCT,1.0,Futurepedia,https://slack.com/
+2026-08-11T16:20:57.733849,FREEMIUM,daily,PRODUCT,1.0,Futurepedia,https://daily.co/
+2026-08-11T16:20:57.733854,FREE,github,PRODUCT,1.0,Futurepedia,https://github.com/ofekron/better-agent
+2026-08-11T16:20:57.733859,FREEMIUM,ilovepdfonlinetoolsforpdf,PRODUCT,1.0,Futurepedia,https://ilovepdf.com/
+2026-08-11T16:20:57.733864,FREEMIUM,stormboard,PRODUCT,1.0,Futurepedia,https://stormboard.com/
+2026-08-11T16:20:57.733868,FREEMIUM,figma,PRODUCT,1.0,Futurepedia,https://figma.com/figjam
+2026-08-11T16:20:57.733873,FREEMIUM,resend,PRODUCT,1.0,Futurepedia,https://resend.com/
+2026-08-11T16:20:57.733878,FREEMIUM,twilio,PRODUCT,1.0,Futurepedia,https://www.twilio.com/en-us/sendgrid/email-api
+2026-08-11T16:20:57.733883,PAID,videoupscaler,PRODUCT,1.0,Futurepedia,https://videoupscaler.video/
+2026-08-11T16:20:57.733888,FREEMIUM,gitbook,PRODUCT,1.0,Futurepedia,https://gitbook.com/
+2026-08-11T16:20:57.733892,FREEMIUM,onesignal,PRODUCT,1.0,Futurepedia,https://onesignal.com/
+2026-08-11T16:20:57.733897,FREE,pandoc,PRODUCT,1.0,Futurepedia,https://pandoc.org/
+2026-08-11T16:20:57.733902,FREEMIUM,zoomcommunications,PRODUCT,1.0,Futurepedia,https://www.zoom.com/
+2026-08-11T16:20:57.733907,FREEMIUM,tandem,PRODUCT,1.0,Futurepedia,https://tandem.chat/
+2026-08-11T16:20:57.733911,FREEMIUM,auferet,PRODUCT,1.0,Futurepedia,https://auferet.com/
+2026-08-11T16:20:57.733916,FREEMIUM,remio,PRODUCT,1.0,Futurepedia,https://remio.ai/
+2026-08-11T16:20:57.733921,FREEMIUM,aiimagedescriber,PRODUCT,1.0,Futurepedia,https://imagedescriber.dev/
+2026-08-11T16:20:57.733925,FREEMIUM,vignra,PRODUCT,1.0,Futurepedia,https://blurbackground.vip/
+2026-08-11T16:20:57.733930,FREEMIUM,docuask,PRODUCT,1.0,Futurepedia,https://docuask.com/
+2026-08-11T16:20:57.733935,FREEMIUM,smallpdf,PRODUCT,1.0,Futurepedia,https://smallpdf.com/
+2026-08-11T16:20:57.733939,FREEMIUM,discord,PRODUCT,1.0,Futurepedia,https://discord.com/
+2026-08-11T16:20:57.733944,FREEMIUM,ably,PRODUCT,1.0,Futurepedia,https://ably.com/
+2026-08-11T16:20:57.733949,PAID,tuple,PRODUCT,1.0,Futurepedia,https://tuple.app/
+2026-08-11T16:20:57.733953,FREEMIUM,recapoai,PRODUCT,1.0,Futurepedia,https://recapo.ai/
+2026-08-11T16:20:57.733958,PAID,systranbychapsvision,PRODUCT,1.0,Futurepedia,https://systransoft.com/
