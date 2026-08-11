@@ -1,95 +1,187 @@
 # IntelligenceForge
 
-IntelligenceForge is an automated, scalable data aggregation pipeline designed to discover, extract, normalize, and store large volumes of structured records. It specializes in academic research papers (arXiv), AI startups (Y Combinator), and AI products (Futurepedia).
+IntelligenceForge is an asynchronous, source-driven data ingestion and normalization pipeline built to automatically collect, structure, and persist intelligence from multiple domains at scale. Designed with a strong emphasis on data integrity and provenance, it serves as the foundational data layer for downstream analytics and AI workflows.
+
+## What It Does
+
+The pipeline actively monitors and ingests structured intelligence across five distinct data domains:
+- **Research Papers**: Extracts academic publications and their associated metadata.
+- **AI Startups**: Collects company profiles, employee counts, and foundational startup information.
+- **AI Products**: Aggregates AI software tools, pricing models, and product-to-startup relationships.
+- **Jobs**: Identifies remote AI and engineering roles published within the last 24 hours.
+- **News**: Monitors high-signal AI news articles published within the last 24 hours.
+
+For each domain, the pipeline orchestrates network collection from authoritative sources, normalizes the raw documents into strict database schemas, deterministically validates required fields, explicitly preserves source provenance, and ultimately exports the datasets into structured formats (JSONL/CSV).
 
 ## Architecture
 
-The system utilizes an asynchronous ingestion architecture:
-- **CrawlerEngine**: Leverages `asyncio` and `aiohttp` for robust, high-concurrency network collection with strict rate-limit handling and smart retries (429 handling, exponential backoff).
-- **PostgreSQL**: Stores both `raw_documents` (for auditing and LLM fallback) and structured entities (`research_papers`, `startups`, `products`).
-- **Entity Normalization**: Deterministically deduplicates entity records before insertion.
-- **SQLAlchemy 2.0 / asyncpg**: Provides typed, scalable database access.
+IntelligenceForge is built on a scalable, asynchronous Python architecture:
+- **Asynchronous Collection**: Leverages `asyncio` and `aiohttp` to perform highly concurrent HTTP requests, bounded by per-host and global concurrency limits to respect source infrastructure.
+- **Source-Specific Adapters**: Encapsulates unique parsing logic (JSON APIs, XML/RSS feeds, HTML) into isolated crawler adapters.
+- **Parsing & Normalization**: Maps unstructured and semi-structured payloads into strict Pydantic schemas before persistence.
+- **Deterministic Validation**: Drops incomplete or malformed records at the boundary (e.g., rejecting missing URLs or unresolvable pricing) rather than permitting data corruption.
+- **PostgreSQL Persistence**: Uses SQLAlchemy 2.0 with `asyncpg` for non-blocking, typed database interactions.
+- **Raw Document Persistence**: Stores original payload data (where applicable) alongside structured entity records to support future auditing and LLM-assisted re-extraction.
+- **Export Pipeline**: Streams validated records from the database into transportable data formats.
+- **Resilience**: Implements automatic exponential backoff, rate-limit awareness (429 handling), and network retry logic natively within the crawler engine.
 
-*For full details on the scale strategy, deduplication, 413/429 handling, and anti-bot measures, please see [architecture.pdf](architecture.pdf).*
+For comprehensive architectural design details, see [architecture.pdf](architecture.pdf).
 
-## Completed Phases
+## Data Sources
 
-- **Phase 1: Architecture Setup** - Database schema, raw document persistence, and pipeline interfaces.
-- **Phase 2: Academic Papers (arXiv)** - High-volume extraction via Atom XML parsing.
-- **Phase 3: Real Data Verification** - Full audit, testing, and production export pipelines.
-- **Phase 4: Startups & Products** - Real-data extraction from Y Combinator and Futurepedia.
-- **Phase 5 (Planned)**: LLM Fallback extraction for unstructured data.
+| Domain | Source | Record Type | Output Format |
+|---|---|---|---|
+| Research Papers | arXiv | XML (Atom) | JSONL / CSV |
+| AI Startups | Y Combinator | JSON API | JSONL / CSV |
+| AI Products | Futurepedia, AIFOXX, AITopTools | HTML / JSON | JSONL / CSV |
+| Jobs | RemoteOK, Remotive, Arbeitnow, WeWorkRemotely, Jobicy | JSON API / RSS | JSONL / CSV |
+| News | TechCrunch, VentureBeat, Wired, The Verge, AI News | RSS / Atom | JSONL / CSV |
 
-## Data Quality Guarantees
+## Data Integrity & Provenance
 
-- **No Hallucinated Data**: All fields are deterministically extracted from reliable origins. Missing data correctly produces `null` rather than estimated values.
-- **Strict Provenance**: Every record contains the original `source.url` and `source.name` for immediate auditing.
-- **Verified Extraction Constraints**: The pipeline enforces schema validation, dropping corrupt or incomplete records (e.g. products without valid providers).
+The system enforces strict engineering guarantees to prevent dataset contamination:
+- **Deterministic Extraction**: Values are explicitly extracted from known, reliable payload locations.
+- **Schema Validation**: All records pass through strict Pydantic models; missing or invalid critical fields (e.g., negative employee counts, unresolvable pricing) result in explicit rejection.
+- **Source Provenance**: Every record permanently retains its canonical `source.url` and `source.name`.
+- **No Fabrication**: The system explicitly forbids the generation, inference, or hallucination of missing data. If a value is unresolvable from the source, it is either stored as `null` (if optional) or the record is discarded entirely.
+- **Deterministic Normalization**: Key entities undergo transparent, replicable normalization (e.g., NFKD unicode decomposition, lowercasing, suffix stripping) prior to deduplication.
 
-## Prerequisites
+## Entity Resolution
 
-- Python 3.10+
-- PostgreSQL 14+
-- (Optional) `fpdf2` for regenerating the architecture document.
+The pipeline resolves entities using deterministic, rule-based canonicalization. It distinguishes between:
+1. **Authoritative-Source Canonicalization**: For Startups and Jobs, the system defers to the authoritative origin (e.g., Y Combinator). The original name provided by the source is extracted, preserved, and stored as the canonical entity representation (`source_verified`).
+2. **Deterministic Normalization**: For Products, the system normalizes owning company names using Unicode decomposition, lowercasing, and removal of common legal suffixes (e.g., "inc", "corp") and whitespace (`normalized_exact`).
+3. **Product-to-Startup Mapping**: Products are associated with startups via the deterministically normalized owner string.
 
-## Setup
+*Note: Fuzzy matching and LLM-based entity resolution are intentionally excluded. The architecture prioritizes deterministic, auditable relationships over speculative or assumed matches.*
 
-1. **Install dependencies:**
+## Project Structure
+
+```
+.
+├── README.md
+├── architecture.pdf
+├── convert_to_csv.py
+├── data/
+├── generate_mapping_log.py
+├── generate_pdf.py
+├── pyproject.toml
+├── requirements.txt
+├── src/
+│   ├── config/
+│   ├── crawlers/
+│   ├── database/
+│   ├── models/
+│   ├── pipelines/
+│   └── main.py
+└── tests/
+```
+
+## Getting Started
+
+1. **Clone the repository:**
    ```bash
-   python -m venv venv
+   git clone <repository_url>
+   cd AtlasIngest
+   ```
+
+2. **Create a virtual environment:**
+   ```bash
+   python3 -m venv venv
+   ```
+
+3. **Activate the virtual environment:**
+   ```bash
    source venv/bin/activate
+   ```
+
+4. **Install dependencies:**
+   ```bash
    pip install -r requirements.txt
    ```
-2. **Environment Variables:**
+
+5. **Configure environment variables:**
+   Copy `.env.example` to `.env` (or create a `.env` file) and define your database connection:
    ```bash
-   export DATABASE_URL="postgresql+asyncpg://postgres:password@localhost:5432/intelligence_forge"
-   export CRAWLER_VERIFY_SSL=true
+   DATABASE_URL="postgresql+asyncpg://user:password@localhost:5432/intelligence_forge"
    ```
 
-## Commands
+6. **Run the pipeline:**
+   ```bash
+   python -m src.main papers
+   ```
 
-Run the CLI for data collection:
+## Usage
 
+The system exposes a unified CLI for managing the lifecycle of the data.
+
+**Ingestion Commands:**
 ```bash
-# Research Papers
-python -m src.main papers --target 1200
+python -m src.main papers       # Ingest research papers
+python -m src.main startups     # Ingest AI startups
+python -m src.main products     # Ingest AI products
+python -m src.main jobs         # Ingest AI jobs (past 24h)
+python -m src.main news         # Ingest AI news (past 24h)
+```
 
-# Startups (YC)
-python -m src.main startups --target 1200
+**Audit Command:**
+```bash
+python -m src.main audit        # Validates database integrity and displays extraction statistics
+```
 
-# Products (Futurepedia)
-python -m src.main products --target 1200
-
-# Run Data Audit
-python -m src.main audit
-
-# Export to JSONL
-python -m src.main export --format jsonl
+**Export Commands:**
+```bash
+python -m src.main export --format jsonl  # Exports database records to data/*.jsonl
+python convert_to_csv.py                  # Flattens and converts JSONL exports to CSV
+python generate_mapping_log.py            # Generates the entity resolution mapping log
 ```
 
 ## Data Outputs
 
-Output data is exported into the `data/` directory.
+All exported files are written to the `data/` directory.
 
-- `research_papers.jsonl` / `research_papers.csv` (1300 records)
-- `startups.jsonl` / `startups.csv` (1225 records)
-- `products.jsonl` / `products.csv` (86 records)
+- `research_papers.jsonl` / `.csv` (1,300 records)
+- `startups.jsonl` / `.csv` (1,225 records)
+- `products.jsonl` / `.csv` (1,411 records)
+- `jobs.jsonl` / `.csv` (171 records)
+- `news.jsonl` / `.csv` (13 records)
+- `entity_mapping_log.csv` (2,807 mapping records)
 
-*Note: CSV conversions can be executed via `python convert_to_csv.py` after JSONL generation.*
+*Note: The numbers reflect successfully verified and exported records present in the final datasets.*
 
-## Test Results
-- **Pytest**: 35/35 passing. Run via `python -m pytest tests/ -v`.
-- **Smoke Tests**: 25/25 verified successfully for each target domain before production scaling.
+## Validation & Testing
 
-## Entity Resolution
+The system's integrity is continually verified by an automated test suite covering parsing, serialization constraints, engine retry behavior, network handling, schema compliance, and temporal freshness logic.
 
-The system uses deterministic and source-verified normalization rather than complex fuzzy entity resolution. Canonicalization is handled as follows:
+- **Pytest**: 41/41 tests passing.
+- **Execution**: Run the full suite using `python -m pytest tests/ -v`.
 
-- **Startups & Jobs:** The pipeline trusts the authoritative source directory (e.g., Y Combinator for Startups, or the job board for Jobs) as the canonical representation. It extracts the raw name provided by the source, stores it as the canonical name, and uses `source_verified` tracking.
-- **Products:** The pipeline performs strict deterministic string normalization on product owner strings using NFKD unicode decomposition, lowercasing, and removal of legal suffixes (inc, llc, corp) and whitespace. The system relies on this normalized string (`normalized_exact`) for mapping products to their owning startup. The original raw strings are not persisted beyond ingestion, and thus the mapping log reflects the post-normalization state as the proven mapping.
+Additionally, the `python -m src.main audit` command performs runtime validation over the persisted data, asserting uniqueness constraints and flagging incomplete entity formations.
 
-*Sophisticated fuzzy matching or LLM-based entity resolution is intentionally excluded to strictly comply with the rule preventing hallucinated or assumed relationships.*
+## Engineering Decisions
+
+- **Asynchronous I/O**: Network-bound ingestion is heavily parallelized utilizing `asyncio` and `aiohttp`, allowing the system to scale gracefully without thread-blocking overhead.
+- **Deterministic Normalization**: Prioritized over heuristic matching to guarantee predictable deduplication and prevent false positives during entity relationship mapping.
+- **Strict Validation**: Pydantic schemas enforce type safety and constraints (e.g. valid URLs, positive integers) at the application boundary, protecting the database from polluted state.
+- **Separation of Concerns**: Crawling (I/O), parsing (CPU), validation, and persistence are deliberately uncoupled to simplify testing and allow independent scaling of components.
+- **Controlled Concurrency**: Implements explicit rate limiting and verification to operate respectfully against upstream sources, mitigating IP bans.
 
 ## Limitations
-- **Dynamic Content**: Extraction heavily relies on standard HTML or predictable structured JSON payloads (e.g. `data-page`). For example, Futurepedia's pagination uses JavaScript routing which restricts our static crawler to only 86 explicit products before requiring full JS rendering. 
-- **Strict Data Validation Rules**: We strictly avoid hallucinated data. If a product lacks explicit pricing or an explicit owner, we reject it (e.g. `PRICING_UNRESOLVED`, `OWNER_UNRESOLVED`) rather than pollute the database with LLM guesses or assumed defaults. Future upgrades plan to leverage LLMs (Phase 5) to robustly process unstructured pages while maintaining data integrity.
+
+- **Dynamic JavaScript Content**: The current crawler implementation relies on static HTML and accessible API endpoints. Highly dynamic sites that obfuscate payloads or rely entirely on client-side JS rendering cannot be fully extracted using the existing synchronous HTTP approach without headless browser integration.
+- **Deterministic Resolution Restrictions**: Entities with severe typographical errors or radical rebranding are occasionally not recognized as identical due to the deliberate absence of fuzzy logic.
+- **Strict Exclusions**: To maintain zero hallucination tolerance, records lacking mandatory fields (e.g., a product lacking pricing data) are fully discarded, mildly reducing potential throughput in favor of absolute quality.
+
+## Roadmap
+
+Future iterations of the IntelligenceForge architecture may target:
+- **Dynamic Content Extraction**: Integration with Playwright for reliable ingestion of JS-heavy SPAs.
+- **LLM-Assisted Extraction**: Opt-in semantic parsing for entirely unstructured documents (e.g., press releases) while retaining strict validation boundaries.
+- **Additional Source Connectors**: Expanding domain coverage to financial filings and GitHub activity.
+- **Incremental Scheduling**: Transitioning from batch CLI triggers to cron-driven delta updates.
+- **Enhanced Observability**: Emitting rich OpenTelemetry traces for deeper ingestion monitoring.
+
+## Documentation
+
+- System Architecture: [architecture.pdf](architecture.pdf)
+- Main Entrypoint: [src/main.py](src/main.py)
