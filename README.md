@@ -1,4 +1,4 @@
-# IntelligenceForge
+# AtlasIngest
 
 IntelligenceForge is an asynchronous, source-driven data ingestion and normalization pipeline for collecting, validating, and exporting structured intelligence from multiple domains. The system is designed around deterministic extraction, strict schema validation, and explicit source provenance to produce auditable datasets suitable for downstream analytics and AI workflows.
 
