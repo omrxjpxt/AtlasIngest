@@ -1,6 +1,6 @@
 # AtlasIngest
 
-IntelligenceForge is an asynchronous, source-driven data ingestion and normalization pipeline for collecting, validating, and exporting structured intelligence from multiple domains. The system is designed around deterministic extraction, strict schema validation, and explicit source provenance to produce auditable datasets suitable for downstream analytics and AI workflows.
+AtlasIngest is an asynchronous, source-driven data ingestion and normalization pipeline for collecting, validating, and exporting structured intelligence from multiple domains. The system is designed around deterministic extraction, strict schema validation, and explicit source provenance to produce auditable datasets suitable for downstream analytics and AI workflows.
 
 ## What It Does
 
@@ -15,7 +15,7 @@ For each domain, the pipeline orchestrates network collection from authoritative
 
 ## Architecture
 
-IntelligenceForge is built on a scalable, asynchronous Python architecture:
+AtlasIngest is built on a scalable, asynchronous Python architecture:
 - **Asynchronous Collection**: Leverages `asyncio` and `aiohttp` to perform highly concurrent HTTP requests, bounded by per-host and global concurrency limits to respect source infrastructure.
 - **Source-Specific Adapters**: Encapsulates unique parsing logic (JSON APIs, XML/RSS feeds, HTML) into isolated crawler adapters.
 - **Parsing & Normalization**: Maps unstructured and semi-structured payloads into strict Pydantic schemas before persistence.
@@ -103,7 +103,7 @@ The pipeline resolves entities using deterministic, rule-based canonicalization.
 5. **Configure environment variables:**
    Create a `.env` file and define your database connection:
    ```bash
-   DATABASE_URL="postgresql+asyncpg://user:password@localhost:5432/intelligence_forge"
+   DATABASE_URL="postgresql+asyncpg://user:password@localhost:5432/atlas_ingest"
    ```
 
 6. **Run the pipeline:**
@@ -174,7 +174,7 @@ Additionally, the `python -m src.main audit` command performs runtime validation
 
 ## Roadmap
 
-Future iterations of the IntelligenceForge architecture may target:
+Future iterations of the AtlasIngest architecture may target:
 - **Dynamic Content Extraction**: Integration with Playwright for reliable ingestion of JS-heavy SPAs.
 - **LLM-Assisted Extraction**: Opt-in semantic parsing for entirely unstructured documents (e.g., press releases) while retaining strict validation boundaries.
 - **Additional Source Connectors**: Expanding domain coverage to financial filings and GitHub activity.
