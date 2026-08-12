@@ -3,7 +3,7 @@ from fpdf import FPDF
 class PDF(FPDF):
     def header(self):
         self.set_font("helvetica", "B", 15)
-        self.cell(0, 10, "IntelligenceForge - System Architecture", align="C", new_x="LMARGIN", new_y="NEXT")
+        self.cell(0, 10, "AtlasIngest - System Architecture", align="C", new_x="LMARGIN", new_y="NEXT")
         self.ln(5)
 
     def chapter_title(self, title):
@@ -21,7 +21,7 @@ pdf.add_page()
 
 pdf.chapter_title("1. Scale Strategy for 500,000+ Records")
 pdf.chapter_body(
-    "To handle 500,000+ records, IntelligenceForge uses asynchronous I/O across the entire pipeline. "
+    "To handle 500,000+ records, AtlasIngest uses asynchronous I/O across the entire pipeline. "
     "Data collection utilizes aiohttp for high-concurrency fetching with connection pooling. "
     "Persistence leverages asyncpg and SQLAlchemy 2.0 to stream inserts efficiently to PostgreSQL. "
     "Crawling is partitioned into distinct phases (Discovery, Extraction, Structuring) to prevent bottlenecks."
