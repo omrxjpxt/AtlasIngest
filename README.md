@@ -20,6 +20,7 @@ AtlasIngest is built on a scalable, asynchronous Python architecture:
 - **Source-Specific Adapters**: Encapsulates unique parsing logic (JSON APIs, XML/RSS feeds, HTML) into isolated crawler adapters.
 - **Parsing & Normalization**: Maps unstructured and semi-structured payloads into strict Pydantic schemas before persistence.
 - **Deterministic Validation**: Drops incomplete or malformed records at the boundary (e.g., rejecting missing URLs or unresolvable pricing) rather than permitting data corruption.
+- **LLM Fallback Engine**: The repository implements a multi-provider LLM extraction architecture with Gemini, Groq, and DeepSeek fallback. Provider-chain behavior, payload reduction, validation handling, and fallback logic are covered by automated tests. Live provider inference requires valid API credentials and has not been end-to-end validated in the current environment.
 - **PostgreSQL Persistence**: Uses SQLAlchemy 2.0 with `asyncpg` for non-blocking, typed database interactions.
 - **Raw Document Persistence**: Stores original payload data (where applicable) alongside structured entity records to support future auditing and LLM-assisted re-extraction.
 - **Export Pipeline**: Streams validated records from the database into transportable data formats.
@@ -105,6 +106,7 @@ The pipeline resolves entities using deterministic, rule-based canonicalization.
    ```bash
    DATABASE_URL="postgresql+asyncpg://user:password@localhost:5432/atlas_ingest"
    ```
+   *Note: The updated SQLAlchemy models are validated against fresh database initialization. Existing persistent databases may require a schema migration before using newly added columns.*
 
 6. **Run the pipeline:**
    ```bash
@@ -153,7 +155,7 @@ All exported files are written to the `data/` directory.
 
 The system's integrity is continually verified by an automated test suite covering parsing, serialization constraints, engine retry behavior, network handling, schema compliance, and temporal freshness logic.
 
-- **Pytest**: 41/41 tests passing.
+- **Pytest**: 56 tests passing, 1 skipped (due to missing live Postgres).
 - **Execution**: Run the full suite using `python -m pytest tests/ -v`.
 
 Additionally, the `python -m src.main audit` command performs runtime validation over the persisted data, asserting uniqueness constraints and flagging incomplete entity formations.
@@ -176,7 +178,6 @@ Additionally, the `python -m src.main audit` command performs runtime validation
 
 Future iterations of the AtlasIngest architecture may target:
 - **Dynamic Content Extraction**: Integration with Playwright for reliable ingestion of JS-heavy SPAs.
-- **LLM-Assisted Extraction**: Opt-in semantic parsing for entirely unstructured documents (e.g., press releases) while retaining strict validation boundaries.
 - **Additional Source Connectors**: Expanding domain coverage to financial filings and GitHub activity.
 - **Incremental Scheduling**: Transitioning from batch CLI triggers to cron-driven delta updates.
 - **Enhanced Observability**: Emitting rich OpenTelemetry traces for deeper ingestion monitoring.

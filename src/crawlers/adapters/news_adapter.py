@@ -34,8 +34,7 @@ class NewsAdapter:
             try:
                 records = self._parse_rss(name, url, res.raw_html)
                 for rec in records:
-                    if rec.published_date and rec.published_date >= cutoff and rec.published_date <= now:
-                        yield rec, rec.title
+                    yield rec, rec.title
             except Exception as e:
                 logger.error(f"Error parsing news from {url}: {e}")
 
@@ -71,13 +70,11 @@ class NewsAdapter:
                     if s is None: s = item.find("atom:content", ns)
                     summary = s.text if s is not None else ""
                 
-                if not title or not link or not pubDate:
+                if not title or not link:
                     continue
                     
-                try:
-                    dt = date_parser.parse(pubDate).astimezone(timezone.utc)
-                except:
-                    continue
+                from src.pipelines.date_parser import parse_date_deterministically
+                dt = parse_date_deterministically(pubDate) if pubDate else None
                     
                 rec = NewsRecord(
                     source=Source(name=source_name, url=link),

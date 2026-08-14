@@ -69,11 +69,11 @@ pdf.chapter_body(
     "Database UNIQUE constraints enforce exactly-one entry per canonical entity name."
 )
 
-pdf.chapter_title("8. LLM Fallback Architecture for Phase 5 (PLANNED)")
+pdf.chapter_title("8. Multi-Provider LLM Fallback (Phase III)")
 pdf.chapter_body(
-    "PLANNED (Not Yet Implemented): Phase 5 will introduce a secondary unstructured pipeline. "
-    "If deterministic extraction fails to yield structured schemas, raw_documents will be routed to an LLM extraction queue. "
-    "The LLM (e.g., via prompt-engineered structured outputs) will fill the missing fields, allowing robust extraction for heterogeneous data sources."
+    "Implemented: A secondary unstructured pipeline supports multi-tier LLM extraction. "
+    "If deterministic extraction fails to yield structured schemas or requires full-text interpretation, raw_documents are routed to an LLM extraction chain. "
+    "The chain dynamically falls back across providers (Gemini -> Groq -> DeepSeek), handles HTTP 429 rate limits, and dynamically halves payload sizes on HTTP 413."
 )
 
 pdf.chapter_title("9. Anti-Bot Strategy")

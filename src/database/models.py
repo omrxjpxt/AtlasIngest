@@ -91,6 +91,7 @@ class ExtractionRun(Base):
     model_used: Mapped[str] = mapped_column(String)
     started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
     completed_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
+    audit_metadata: Mapped[Optional[dict]] = mapped_column(JSON)
 
     crawl_run: Mapped[Optional["CrawlRun"]] = relationship(back_populates="extraction_runs")
 

@@ -9,3 +9,7 @@ aiohttp>=3.9
 aioresponses>=0.7
 lxml>=5.0
 beautifulsoup4
+google-generativeai
+groq
+openai
+tiktoken
